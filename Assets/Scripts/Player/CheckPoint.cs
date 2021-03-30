@@ -3,14 +3,24 @@ using UnityEngine;
 public class CheckPoint : MonoBehaviour
 {
     [SerializeField] private CameraController cam = null;
-    [SerializeField] private Player characterToFollow = null;
+    [SerializeField] private Guardian guardian = null;
+    [SerializeField] private Friend friend = null;
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.TryGetComponent(out Player player))
         {
-            cam.ChangeTarget(characterToFollow.transform);
-            characterToFollow.enabled = true;
+            if (player == guardian)
+            {
+                cam.ChangeTarget(friend.transform);
+                friend.enabled = true;
+            }
+            else
+            {
+                cam.ChangeTarget(guardian.transform);
+                guardian.enabled = true;
+            }
+            guardian.light2d.enabled = !guardian.light2d.enabled;
             player.enabled = false;
         }
     }
