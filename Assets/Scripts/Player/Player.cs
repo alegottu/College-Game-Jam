@@ -11,13 +11,13 @@ public abstract class Player : MonoBehaviour
 
     [SerializeField] protected PlayerStats stats = null;
     [SerializeField] protected PlayerInput input = null;
-    [SerializeField] protected Transform rotator = null;
+    [SerializeField] protected Rigidbody2D rb = null;
     [SerializeField] protected SpriteRenderer character = null;
     [SerializeField] protected AudioSource sfx = null;
 
-    protected float attackTimer = 0;
-
-    private const string collisionTag = "Solid Terrain";
+    protected bool grounded = true;
+    protected bool jumping = false;
+    protected bool falling = false;
 
     protected virtual void Awake()
     {
@@ -27,56 +27,44 @@ public abstract class Player : MonoBehaviour
 
     protected virtual void Update()
     {
-        if (input.attack)
-        {
-            TryAttack();
-        }
-
-        attackTimer -= Time.deltaTime;
+        jumping = input.jump && grounded;
+        falling = rb.velocity.y <= stats.maxVelocity || !input.jump;
     }
 
     protected virtual void FixedUpdate()
     {
-        transform.position += (Vector3)input.movement * stats.speed * speedMultiplier * Time.deltaTime;
+        Move();
 
-        Vector2 direction = (input.mousePos - rotator.position).normalized;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        rotator.eulerAngles = Vector3.forward * angle;
-
-        character.flipX = angle > 90 || angle < -90;
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag(collisionTag))
+        if (jumping)
         {
-            GetComponent<Rigidbody2D>().mass = 100; // Set to large enough mass to resist any collisions
+            Jump();
+        }
+        if (falling)
+        {
+            Fall();
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    protected void Move()
     {
-        if (collision.CompareTag(collisionTag))
-        {
-            GetComponent<Rigidbody2D>().mass = 1; // Reset to default player mass
-        }
+        transform.position += Vector3.right * input.movement * stats.speed * speedMultiplier * Time.deltaTime;
+        character.flipX = input.movement < 0;
     }
 
-    protected abstract void Attack();
-
-    protected virtual void TryAttack()
+    protected void Jump()
     {
-        if (attackTimer <= 0)
-        {
-            sfx.PlayOneShot(sfx.clip);
-            attackTimer = stats.attackSpeed;
-            Attack();
-        }
+        grounded = grounded ? false : grounded;
+        rb.velocity = Vector2.up * stats.jumpForce;
     }
 
-    public Vector3 GetDirection()
+    protected void Fall()
     {
-        return input.movement;
+        rb.velocity += Vector2.up * Physics2D.gravity.y * (stats.fallForce - 1) * Time.deltaTime;
+    }
+
+    protected virtual void OnCollisionEnter2D()
+    {
+        grounded = true;
     }
 
     protected virtual void OnDisable()
