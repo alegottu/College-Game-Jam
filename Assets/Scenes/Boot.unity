@@ -150,7 +150,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79ed5bc09829ec1419297a4540427cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axisIncrement: 0.1
 --- !u!4 &328087637
 Transform:
   m_ObjectHideFlags: 0

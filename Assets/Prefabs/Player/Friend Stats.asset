@@ -15,4 +15,4 @@ MonoBehaviour:
   _speed: 5
   _fallForce: 5
   _jumpForce: 10
-  _maxVelocity: 10
+  _maxVelocity: 5
