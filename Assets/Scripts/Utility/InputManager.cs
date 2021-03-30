@@ -6,6 +6,7 @@ public class InputManager : Singleton<InputManager>
 {
     private Dictionary<string, KeyCode> Buttons = new Dictionary<string, KeyCode>
     {
+        ["Grab"] = KeyCode.LeftShift,
         ["Attack"] = KeyCode.Mouse0,
         ["Jump"] = KeyCode.Space
     };

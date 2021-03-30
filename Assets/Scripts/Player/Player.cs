@@ -16,8 +16,6 @@ public abstract class Player : MonoBehaviour
     [SerializeField] protected AudioSource sfx = null;
 
     protected bool grounded = true;
-    protected bool jumping = false;
-    protected bool falling = false;
 
     protected virtual void Awake()
     {
@@ -25,21 +23,15 @@ public abstract class Player : MonoBehaviour
         AudioController.Instance.ChangeSFXTrack(sfx);
     }
 
-    protected virtual void Update()
-    {
-        jumping = input.jump && grounded;
-        falling = rb.velocity.y <= stats.maxVelocity || !input.jump;
-    }
-
     protected virtual void FixedUpdate()
     {
         Move();
 
-        if (jumping)
+        if (input.jump && grounded)
         {
             Jump();
         }
-        if (falling)
+        if (rb.velocity.y <= stats.maxVelocity || !input.jump)
         {
             Fall();
         }
