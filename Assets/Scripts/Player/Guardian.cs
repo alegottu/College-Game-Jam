@@ -2,5 +2,5 @@
 
 public class Guardian : Player
 {
-    public Light2D light = null;
+    public Light2D light2d = null;
 }
