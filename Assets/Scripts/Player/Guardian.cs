@@ -1,6 +1,6 @@
-﻿using UnityEngine;
+﻿using UnityEngine.Experimental.Rendering.Universal;
 
 public class Guardian : Player
 {
-
+    public Light2D light = null;
 }
