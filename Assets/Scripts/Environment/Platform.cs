@@ -2,15 +2,17 @@ using UnityEngine;
 
 public abstract class Platform : MonoBehaviour
 {
-    protected bool active = false;
     protected Player player = null;
+
+    protected abstract void OnPlayerEnter();
+    protected abstract void OnPlayerExit();
 
     protected virtual void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.TryGetComponent(out Player player))
         {
-            active = true;
             this.player = player;
+            OnPlayerEnter();
         }
     }
 
@@ -18,8 +20,8 @@ public abstract class Platform : MonoBehaviour
     {
         if (collision.gameObject.Equals(player.gameObject))
         {
-            active = false;
-            this.player = null;
+            OnPlayerExit();
+            player = null;
         }
     }
 }

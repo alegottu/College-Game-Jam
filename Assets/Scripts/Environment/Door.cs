@@ -11,7 +11,7 @@ public class Door : SceneTransition
         playerAnim.SetTrigger("Exit");
     }
 
-    private void OnAnimationExit()
+    public void OnAnimationExit()
     {
         SceneController.Instance.LoadLevel(nextStage);
     }

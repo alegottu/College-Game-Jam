@@ -16,6 +16,7 @@ public abstract class Player : MonoBehaviour
     [SerializeField] protected AudioSource sfx = null;
 
     protected bool grounded = true;
+    protected bool canJump = true;
 
     protected virtual void Awake()
     {
@@ -31,9 +32,15 @@ public abstract class Player : MonoBehaviour
         {
             Jump();
         }
+
         if (rb.velocity.y <= stats.maxVelocity || !input.jump)
         {
             Fall();
+        }
+
+        if (input.jumpExit)
+        {
+            canJump = true;
         }
     }
 
@@ -45,7 +52,8 @@ public abstract class Player : MonoBehaviour
 
     protected void Jump()
     {
-        grounded = grounded ? false : grounded;
+        grounded = false;
+        canJump = false;
         rb.velocity = Vector2.up * stats.jumpForce;
     }
 

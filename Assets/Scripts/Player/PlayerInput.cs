@@ -8,6 +8,9 @@ public class PlayerInput : MonoBehaviour
     [HideInInspector] public bool jump = false;
     [HideInInspector] public bool grab = false;
 
+    [HideInInspector] public bool jumpEnter = false;
+    [HideInInspector] public bool jumpExit = false;
+
     [SerializeField] private float smoothRate = 1;
     [SerializeField] private Camera cam = null;
 
@@ -18,5 +21,8 @@ public class PlayerInput : MonoBehaviour
         attack = InputManager.Instance.GetButtonDown("Attack");
         jump = InputManager.Instance.GetButton("Jump");
         grab = InputManager.Instance.GetButton("Grab");
+
+        jumpEnter = InputManager.Instance.GetButtonDown("Jump");
+        jumpExit = InputManager.Instance.GetButtonUp("Jump");
     }
 }

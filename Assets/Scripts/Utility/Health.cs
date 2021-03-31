@@ -26,7 +26,7 @@ public class Health : MonoBehaviour
         _health = _health > maxHealth ? maxHealth : _health; 
     }
 
-    private void Die()
+    public void Die()
     {
         OnDeath?.Invoke();
     } 
