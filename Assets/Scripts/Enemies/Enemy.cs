@@ -59,12 +59,13 @@ public abstract class Enemy : MonoBehaviour
 
     protected virtual void Attack()
     {
+        AnimateAttack();
         attackTimer = stats.attackSpeed;
     }
 
-    public virtual void AnimateSpawn()
+    protected virtual void AnimateAttack()
     {
-        
+
     }
 
     // Default method for melee enemies; override completely for different cases
