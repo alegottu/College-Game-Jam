@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
+using System;
 
 public class Health : MonoBehaviour
 {
+    public event Action OnDeath;
 
     [SerializeField] private int _health = 1;
     public int health { get { return _health; } }
@@ -26,6 +28,6 @@ public class Health : MonoBehaviour
 
     private void Die()
     {
-        Destroy(gameObject);
+        OnDeath?.Invoke();
     } 
 }
