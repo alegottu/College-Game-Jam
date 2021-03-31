@@ -28,7 +28,7 @@ public abstract class Player : MonoBehaviour
     {
         Move();
 
-        if (input.jump && grounded)
+        if (canJump && grounded && input.jump)
         {
             Jump();
         }
