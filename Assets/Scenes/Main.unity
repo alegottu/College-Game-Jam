@@ -396,6 +396,12 @@ PrefabInstance:
       propertyPath: character
       value: 
       objectReference: {fileID: 1231816984}
+    - target: {fileID: 6933598595906704195, guid: d2c7ecabbcbddbe4084146f2045f5562,
+        type: 3}
+      propertyPath: emotionItem
+      value: 
+      objectReference: {fileID: 1286915717564710229, guid: cab889702a8a97743ba905fa2af0374d,
+        type: 3}
     - target: {fileID: 6975966688855025085, guid: d2c7ecabbcbddbe4084146f2045f5562,
         type: 3}
       propertyPath: m_RootOrder

@@ -20,6 +20,10 @@ MonoBehaviour:
   character: {fileID: 3429289365212971826}
   sfx: {fileID: 2520197625789222589}
   light2d: {fileID: 765398006312450456}
+  emotionItem: {fileID: 0}
+  lightPrefab: {fileID: 946731397973097589, guid: cadb57eabaf0fb64299eba1ef54d183b,
+    type: 3}
+  lightAmount: 3
 --- !u!1001 &5369019888918356426
 PrefabInstance:
   m_ObjectHideFlags: 0

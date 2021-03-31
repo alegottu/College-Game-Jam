@@ -1,7 +1,10 @@
 using UnityEngine;
+using System;
 
 public class CheckPoint : MonoBehaviour
 {
+    public static event Action<CheckPoint> OnAnyCheckPointReached;
+
     [SerializeField] private CameraController cam = null;
     [SerializeField] private Guardian guardian = null;
     [SerializeField] private Friend friend = null;
@@ -20,8 +23,10 @@ public class CheckPoint : MonoBehaviour
                 cam.ChangeTarget(guardian.transform);
                 guardian.enabled = true;
             }
+
             guardian.light2d.enabled = !guardian.light2d.enabled;
             player.enabled = false;
+            OnAnyCheckPointReached?.Invoke(this);
         }
     }
 }

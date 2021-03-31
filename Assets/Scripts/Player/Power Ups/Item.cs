@@ -8,11 +8,11 @@ public abstract class Item : MonoBehaviour
 
     protected virtual void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.TryGetComponent(out Player player))
+        if (other.TryGetComponent(out Friend player))
         {
             this.player = player;
             OnPickUp();
-            Destroy(this);
+            Destroy(gameObject);
         }
     }
 }
