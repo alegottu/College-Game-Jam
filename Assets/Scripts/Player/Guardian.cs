@@ -16,8 +16,10 @@ public class Guardian : Player
         CheckPoint.OnAnyCheckPointReached += OnAnyCheckPointReachedEventHandler;
     }
 
-    private void Update()
+    protected override void Update()
     {
+        base.Update();
+
         if (lightsUsed < lightAmount && input.attack )
         {
             lightsUsed++;

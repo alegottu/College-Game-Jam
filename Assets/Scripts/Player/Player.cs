@@ -24,6 +24,14 @@ public abstract class Player : MonoBehaviour
         AudioController.Instance.ChangeSFXTrack(sfx);
     }
 
+    protected virtual void Update()
+    {
+        if (input.jumpExit)
+        {
+            canJump = true;
+        }
+    }
+
     protected virtual void FixedUpdate()
     {
         Move();
@@ -36,11 +44,6 @@ public abstract class Player : MonoBehaviour
         if (rb.velocity.y <= stats.maxVelocity || !input.jump)
         {
             Fall();
-        }
-
-        if (input.jumpExit)
-        {
-            canJump = true;
         }
     }
 
