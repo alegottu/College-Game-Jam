@@ -8,7 +8,10 @@ public class Door : SceneTransition
     // Ensure trigger is small and centered
     private void OnTriggerEnter2D(Collider2D other)
     {
-        playerAnim.SetTrigger("Exit");
+        if (other.gameObject.Equals(playerAnim.transform.parent.gameObject))
+        {
+            playerAnim.SetTrigger("Exit");
+        }
     }
 
     public void OnAnimationExit()
