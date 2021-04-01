@@ -6,6 +6,7 @@ public abstract class Enemy : MonoBehaviour
 
     [SerializeField] protected EnemyStats stats = null;
     [SerializeField] protected SpriteRenderer sprite = null;
+    [SerializeField] protected Animator anim = null;
     [SerializeField] protected int difficultyMultiplier = 1;
 
     protected Vector3 direction = Vector3.right;
@@ -59,13 +60,8 @@ public abstract class Enemy : MonoBehaviour
 
     protected virtual void Attack()
     {
-        AnimateAttack();
         attackTimer = stats.attackSpeed;
-    }
-
-    protected virtual void AnimateAttack()
-    {
-
+        anim.SetTrigger("Attack"); // Ensure all animation controllers for enemy prefabs have this trigger
     }
 
     // Default method for melee enemies; override completely for different cases
