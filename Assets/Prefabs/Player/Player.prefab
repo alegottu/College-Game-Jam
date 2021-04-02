@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fa117df1a930e143b0cc775edf68246, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sfx: {fileID: 0}
+  sfx: {fileID: 7528643396585353079}
   anim: {fileID: 7282686607254762966}
   sprite: {fileID: 7283973879275922168}
   player: {fileID: 0}

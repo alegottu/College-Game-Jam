@@ -284,7 +284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   previousLevel: 
-  currentLevel: Tutorial
+  currentLevel: StageOne
   gameState: {fileID: 1108323555}
 --- !u!4 &1726061821
 Transform:
