@@ -32,7 +32,6 @@ public abstract class Enemy : MonoBehaviour
             return;
         }
 
-        OnMove?.Invoke(direction.x);
         ChangeDirection();
         Move();
     }
@@ -51,6 +50,7 @@ public abstract class Enemy : MonoBehaviour
 
     protected virtual void Move()
     {
+        OnMove?.Invoke(direction.x);
         transform.position += new Vector3(direction.x, direction.y, 0) * stats.speed * Time.deltaTime;
     }
 
@@ -59,16 +59,21 @@ public abstract class Enemy : MonoBehaviour
         this.direction = direction;
     }
 
-    protected virtual void Attack()
+    protected void StartAttack()
     {
         OnAttack?.Invoke();
         attackTimer = stats.attackSpeed;
     }
 
+    protected virtual void Attack()
+    {
+        StartAttack();
+    }
+
     // Default method for melee enemies; override completely for different cases
     protected virtual void OnTriggerEnter2D(Collider2D other)
     {
-        if (player && other.gameObject.Equals(player.gameObject))
+        if (other.gameObject.Equals(player.gameObject))
         {
             inRange = true;
         }
@@ -76,7 +81,7 @@ public abstract class Enemy : MonoBehaviour
 
     protected virtual void OnTriggerExit2D(Collider2D other)
     {
-        if (player && other.gameObject.Equals(player.gameObject))
+        if (other.gameObject.Equals(player.gameObject))
         {
             inRange = false;
         }

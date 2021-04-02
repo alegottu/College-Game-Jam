@@ -40,6 +40,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sticky Platform
       objectReference: {fileID: 0}
+    - target: {fileID: 7154734700935312501, guid: 127a669dae95441439a4831ba3809c12,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154734700935312501, guid: 127a669dae95441439a4831ba3809c12,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.3962264
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154734700935312501, guid: 127a669dae95441439a4831ba3809c12,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.088536866
+      objectReference: {fileID: 0}
     - target: {fileID: 7507113913214881541, guid: 127a669dae95441439a4831ba3809c12,
         type: 3}
       propertyPath: m_RootOrder
