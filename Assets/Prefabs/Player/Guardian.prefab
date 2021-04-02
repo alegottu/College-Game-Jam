@@ -17,7 +17,6 @@ MonoBehaviour:
   stats: {fileID: 11400000, guid: ecc78c21adf83e047bcf34c36d8f0fc6, type: 2}
   input: {fileID: 2314632241277823028}
   rb: {fileID: 9120785668446010497}
-  character: {fileID: 3429289365212971826}
   sfx: {fileID: 2520197625789222589}
   light2d: {fileID: 765398006312450456}
   emotionItem: {fileID: 0}
@@ -34,12 +33,12 @@ PrefabInstance:
     - target: {fileID: 2503037996409250655, guid: 26a6c0a2c142fd14c9a02645378ad874,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.65
+      value: 0.5922966
       objectReference: {fileID: 0}
     - target: {fileID: 2503037996409250655, guid: 26a6c0a2c142fd14c9a02645378ad874,
         type: 3}
       propertyPath: m_Size.y
-      value: 1.4
+      value: 1.4064114
       objectReference: {fileID: 0}
     - target: {fileID: 2503037996409250655, guid: 26a6c0a2c142fd14c9a02645378ad874,
         type: 3}
@@ -49,7 +48,27 @@ PrefabInstance:
     - target: {fileID: 2503037996409250655, guid: 26a6c0a2c142fd14c9a02645378ad874,
         type: 3}
       propertyPath: m_Offset.y
-      value: 0
+      value: 0.009617299
+      objectReference: {fileID: 0}
+    - target: {fileID: 3121161879546260801, guid: 26a6c0a2c142fd14c9a02645378ad874,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.3754819
+      objectReference: {fileID: 0}
+    - target: {fileID: 3121161879546260801, guid: 26a6c0a2c142fd14c9a02645378ad874,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.20000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 3121161879546260801, guid: 26a6c0a2c142fd14c9a02645378ad874,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.027138568
+      objectReference: {fileID: 0}
+    - target: {fileID: 3121161879546260801, guid: 26a6c0a2c142fd14c9a02645378ad874,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4283338411082340920, guid: 26a6c0a2c142fd14c9a02645378ad874,
         type: 3}
@@ -177,6 +196,26 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 8083540296507319569, guid: 26a6c0a2c142fd14c9a02645378ad874,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8083540296507319569, guid: 26a6c0a2c142fd14c9a02645378ad874,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.100000024
+      objectReference: {fileID: 0}
+    - target: {fileID: 8083540296507319569, guid: 26a6c0a2c142fd14c9a02645378ad874,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8083540296507319569, guid: 26a6c0a2c142fd14c9a02645378ad874,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26a6c0a2c142fd14c9a02645378ad874, type: 3}
 --- !u!1 &716341444333455084 stripped
@@ -206,12 +245,6 @@ MonoBehaviour:
 --- !u!82 &2520197625789222589 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 7528643396585353079, guid: 26a6c0a2c142fd14c9a02645378ad874,
-    type: 3}
-  m_PrefabInstance: {fileID: 5369019888918356426}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &3429289365212971826 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 7283973879275922168, guid: 26a6c0a2c142fd14c9a02645378ad874,
     type: 3}
   m_PrefabInstance: {fileID: 5369019888918356426}
   m_PrefabAsset: {fileID: 0}

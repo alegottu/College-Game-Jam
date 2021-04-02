@@ -11,8 +11,9 @@ public class Guardian : Player
 
     private int lightsUsed = 0;
 
-    private void OnEnable()
+    protected override void OnEnable()
     {
+        base.OnEnable();
         CheckPoint.OnAnyCheckPointReached += OnAnyCheckPointReachedEventHandler;
     }
 

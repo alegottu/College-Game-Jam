@@ -13,20 +13,22 @@ public class CheckPoint : MonoBehaviour
     {
         if (other.TryGetComponent(out Player player))
         {
-            if (player == guardian)
+            OnAnyCheckPointReached?.Invoke(this);
+            guardian.light2d.enabled = !guardian.light2d.enabled;
+
+            if (player.Equals(friend))
             {
-                cam.ChangeTarget(friend.transform);
-                friend.enabled = true;
+                friend.enabled = false;
+                cam.ChangeTarget(guardian.transform);
+                guardian.enabled = true;
+                gameObject.SetActive(false);
             }
             else
             {
-                cam.ChangeTarget(guardian.transform);
-                guardian.enabled = true;
+                guardian.enabled = false;
+                cam.ChangeTarget(friend.transform);
+                friend.enabled = true;
             }
-
-            guardian.light2d.enabled = !guardian.light2d.enabled;
-            player.enabled = false;
-            OnAnyCheckPointReached?.Invoke(this);
         }
     }
 }

@@ -13,6 +13,14 @@ public class PlayerMedia : MonoBehaviour
         player.OnMove += OnMove;
         player.OnFall += OnFall;
         player.OnLanding += OnLanding;
+        player.OnPlayerExit += OnExit;
+    }
+
+    private void OnExit()
+    {
+        // Set conditions for idle
+        anim.SetBool("Grounded", true);
+        anim.SetFloat("Movement", 0);
     }
 
     private void OnJump()
@@ -23,8 +31,10 @@ public class PlayerMedia : MonoBehaviour
 
     private void OnMove(float movement)
     {
-        anim.SetFloat("Movement", movement);
-        sprite.flipX = movement < 0;
+        anim.SetFloat("Movement", Mathf.Abs(movement));
+
+        if (movement != 0)
+         sprite.flipX = movement < 0;
     }
 
     private void OnFall(float speed)
@@ -43,5 +53,6 @@ public class PlayerMedia : MonoBehaviour
         player.OnMove -= OnMove;
         player.OnFall -= OnFall;
         player.OnLanding -= OnLanding;
+        player.OnPlayerExit -= OnExit;
     }
 }
