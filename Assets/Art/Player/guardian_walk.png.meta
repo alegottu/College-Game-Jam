@@ -1,37 +1,22 @@
 fileFormatVersion: 2
-guid: be7751cee3f5ffa4385f946d03c0bc7c
+guid: fc68404215aee8445b6f5816325d5947
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6799396884095122485
-    second: friend_walk_0
+      213: -8698657921963013712
+    second: guardian_walk_0
   - first:
-      213: 2892413799098703790
-    second: friend_walk_1
+      213: 146900806978075994
+    second: guardian_walk_1
   - first:
-      213: -4740843968060105637
-    second: friend_walk_2
+      213: 7234440123188860654
+    second: guardian_walk_2
   - first:
-      213: -4620875167713973136
-    second: friend_walk_3
+      213: 5065193822086073619
+    second: guardian_walk_3
   - first:
-      213: 6468609266649333413
-    second: friend_walk_4
-  - first:
-      213: -6224806391141638452
-    second: friend_walk_5
-  - first:
-      213: -9023170283826095825
-    second: friend_walk_6
-  - first:
-      213: -2443002220567284812
-    second: friend_walk_7
-  - first:
-      213: -4587973420821746801
-    second: friend_walk_8
-  - first:
-      213: 9003745528140217379
-    second: friend_walk_9
+      213: -444071867328325399
+    second: guardian_walk_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -145,13 +130,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: friend_walk_0
+      name: guardian_walk_0
       rect:
         serializedVersion: 2
-        x: 111
-        y: 217
-        width: 51
-        height: 119
+        x: 33
+        y: 26
+        width: 55
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,102 +144,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53c336bf07f4c5e50800000000000000
-      internalID: 6799396884095122485
+      spriteID: 0b9c1ca15b8284780800000000000000
+      internalID: -8698657921963013712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: friend_walk_1
+      name: guardian_walk_1
       rect:
         serializedVersion: 2
-        x: 357
-        y: 218
-        width: 52
-        height: 119
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eaf57be860be32820800000000000000
-      internalID: 2892413799098703790
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: friend_walk_2
-      rect:
-        serializedVersion: 2
-        x: 611
-        y: 218
-        width: 53
-        height: 119
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5c59347783253eb0800000000000000
-      internalID: -4740843968060105637
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: friend_walk_3
-      rect:
-        serializedVersion: 2
-        x: 874
-        y: 218
-        width: 46
-        height: 118
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07c2cf4748a5fdfb0800000000000000
-      internalID: -4620875167713973136
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: friend_walk_4
-      rect:
-        serializedVersion: 2
-        x: 1137
-        y: 218
-        width: 45
-        height: 119
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5aefe691bdd15c950800000000000000
-      internalID: 6468609266649333413
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: friend_walk_5
-      rect:
-        serializedVersion: 2
-        x: 1392
-        y: 218
+        x: 167
+        y: 27
         width: 56
         height: 119
       alignment: 0
@@ -264,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccedb64519b0d99a0800000000000000
-      internalID: -6224806391141638452
+      spriteID: a5d75217185e90200800000000000000
+      internalID: 146900806978075994
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: friend_walk_6
+      name: guardian_walk_2
       rect:
         serializedVersion: 2
-        x: 1645
-        y: 218
-        width: 53
-        height: 118
+        x: 302
+        y: 27
+        width: 50
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,19 +186,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f295fa40f6247c280800000000000000
-      internalID: -9023170283826095825
+      spriteID: ee6518b56f4e56460800000000000000
+      internalID: 7234440123188860654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: friend_walk_7
+      name: guardian_walk_3
       rect:
         serializedVersion: 2
-        x: 1897
-        y: 218
-        width: 53
+        x: 442
+        y: 27
+        width: 51
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d81f3d1fe2b4640800000000000000
+      internalID: 5065193822086073619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guardian_walk_4
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 27
+        width: 51
         height: 119
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -306,50 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b3b8998c66b81ed0800000000000000
-      internalID: -2443002220567284812
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: friend_walk_8
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 26
-        width: 45
-        height: 119
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f8b6cfc5b7e3450c0800000000000000
-      internalID: -4587973420821746801
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: friend_walk_9
-      rect:
-        serializedVersion: 2
-        x: 370
-        y: 26
-        width: 38
-        height: 117
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32c3fcc9adab3fc70800000000000000
-      internalID: 9003745528140217379
+      spriteID: 9e8962d4df656d9f0800000000000000
+      internalID: -444071867328325399
       vertices: []
       indices: 
       edges: []

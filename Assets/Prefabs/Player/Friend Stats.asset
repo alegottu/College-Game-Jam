@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Friend Stats
   m_EditorClassIdentifier: 
   _speed: 3
-  _fallForce: 5
-  _jumpForce: 7
-  _maxVelocity: 4.5
+  _fallForce: 2
+  _jumpForce: 6
+  _maxVelocity: 1
