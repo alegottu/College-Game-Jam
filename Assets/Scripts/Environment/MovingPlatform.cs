@@ -24,6 +24,6 @@ public class MovingPlatform : Platform
             targetPoint = targetPoint == points.Length - 1 ? 0 : targetPoint + 1;
         }
 
-        transform.position = Vector3.MoveTowards(transform.position, points[targetPoint].position, speed);
+        transform.position = Vector3.MoveTowards(transform.position, points[targetPoint].position, speed * Time.deltaTime);
     }
 }
