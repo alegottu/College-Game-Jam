@@ -19,7 +19,7 @@ public class MovingPlatform : Platform
 
     private void FixedUpdate()
     {
-        if (transform.position.Equals(points[targetPoint]))
+        if (transform.position.Equals(points[targetPoint].position))
         {
             targetPoint = targetPoint == points.Length - 1 ? 0 : targetPoint + 1;
         }

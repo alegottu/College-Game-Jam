@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Projectile Enemy Stats
   m_EditorClassIdentifier: 
   _speed: 0
-  _attackSpeed: 1
+  _attackSpeed: 1.5
   _damage: 1

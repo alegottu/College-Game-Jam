@@ -13,7 +13,7 @@ public class WalkingEnemy : Enemy
 
     protected override void FixedUpdate()
     {
-        if (transform.position.Equals(points[targetPoint]))
+        if (transform.position.Equals(points[targetPoint].position))
         {
             targetPoint = targetPoint == points.Length - 1 ? 0 : targetPoint + 1;
         }
