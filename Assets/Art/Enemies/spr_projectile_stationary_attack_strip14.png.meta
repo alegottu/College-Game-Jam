@@ -160,12 +160,12 @@ TextureImporter:
       name: spr_projectile_stationary_attack_strip14_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 160
+        x: 23
+        y: 2
+        width: 129
+        height: 116
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,12 +181,12 @@ TextureImporter:
       name: spr_projectile_stationary_attack_strip14_1
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
-        width: 160
-        height: 160
+        x: 182
+        y: 1
+        width: 130
+        height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -202,12 +202,12 @@ TextureImporter:
       name: spr_projectile_stationary_attack_strip14_2
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
-        width: 160
-        height: 160
+        x: 336
+        y: 4
+        width: 131
+        height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -223,12 +223,12 @@ TextureImporter:
       name: spr_projectile_stationary_attack_strip14_3
       rect:
         serializedVersion: 2
-        x: 480
-        y: 0
-        width: 160
-        height: 160
+        x: 494
+        y: 8
+        width: 131
+        height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -244,12 +244,12 @@ TextureImporter:
       name: spr_projectile_stationary_attack_strip14_4
       rect:
         serializedVersion: 2
-        x: 640
-        y: 0
-        width: 160
-        height: 160
+        x: 653
+        y: 8
+        width: 132
+        height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,12 +265,12 @@ TextureImporter:
       name: spr_projectile_stationary_attack_strip14_5
       rect:
         serializedVersion: 2
-        x: 800
-        y: 0
-        width: 160
-        height: 160
+        x: 814
+        y: 8
+        width: 131
+        height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -286,12 +286,12 @@ TextureImporter:
       name: spr_projectile_stationary_attack_strip14_6
       rect:
         serializedVersion: 2
-        x: 960
-        y: 0
-        width: 160
-        height: 160
+        x: 973
+        y: 8
+        width: 133
+        height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -307,12 +307,12 @@ TextureImporter:
       name: spr_projectile_stationary_attack_strip14_7
       rect:
         serializedVersion: 2
-        x: 1120
-        y: 0
-        width: 160
-        height: 160
+        x: 1134
+        y: 8
+        width: 130
+        height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -328,12 +328,12 @@ TextureImporter:
       name: spr_projectile_stationary_attack_strip14_8
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 0
-        width: 160
-        height: 160
+        x: 1293
+        y: 8
+        width: 133
+        height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -349,12 +349,12 @@ TextureImporter:
       name: spr_projectile_stationary_attack_strip14_9
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 0
-        width: 160
-        height: 160
+        x: 1442
+        y: 3
+        width: 158
+        height: 146
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -371,11 +371,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1600
-        y: 0
+        y: 4
         width: 160
-        height: 160
+        height: 153
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -392,11 +392,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1760
-        y: 0
-        width: 160
-        height: 160
+        y: 3
+        width: 148
+        height: 157
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -413,11 +413,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1920
-        y: 0
-        width: 160
-        height: 160
+        y: 3
+        width: 144
+        height: 157
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -433,12 +433,12 @@ TextureImporter:
       name: spr_projectile_stationary_attack_strip14_13
       rect:
         serializedVersion: 2
-        x: 2080
-        y: 0
-        width: 160
-        height: 160
+        x: 2105
+        y: 2
+        width: 119
+        height: 119
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

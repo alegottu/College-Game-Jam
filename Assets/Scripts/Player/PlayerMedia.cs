@@ -4,6 +4,7 @@ public class PlayerMedia : MonoBehaviour
 {
     [SerializeField] private AudioSource audio = null;
     [SerializeField] private Animator anim = null;
+    [SerializeField] private SpriteRenderer sprite = null;
     [SerializeField] private Player player = null;
 
     private void OnEnable()
@@ -14,23 +15,24 @@ public class PlayerMedia : MonoBehaviour
         player.OnLanding += OnLanding;
     }
 
-    public void OnJump()
+    private void OnJump()
     {
         anim.SetTrigger("Jump");
         anim.SetBool("Grounded", false);
     }
 
-    public void OnMove(float movement)
+    private void OnMove(float movement)
     {
         anim.SetFloat("Movement", movement);
+        sprite.flipX = movement < 0;
     }
 
-    public void OnFall(float speed)
+    private void OnFall(float speed)
     {
         anim.SetFloat("Fall", speed);
     }
 
-    public void OnLanding()
+    private void OnLanding()
     {
         anim.SetBool("Grounded", true);
     }

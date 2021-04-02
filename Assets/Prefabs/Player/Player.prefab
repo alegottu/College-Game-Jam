@@ -120,6 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audio: {fileID: 7528643396585353079}
   anim: {fileID: 7282686607254762966}
+  sprite: {fileID: 7283973879275922168}
   player: {fileID: 0}
 --- !u!82 &7528643396585353079
 AudioSource:

@@ -35,30 +35,29 @@ public abstract class Player : MonoBehaviour
 
     protected virtual void FixedUpdate()
     {
-        OnMove?.Invoke(Mathf.Abs(input.movement));
         Move();
 
         if (canJump && grounded && input.jump)
         {
-            OnJump?.Invoke();
             Jump();
         }
 
         if (rb.velocity.y <= stats.maxVelocity || !input.jump)
         {
-            OnFall?.Invoke(rb.velocity.y);
             Fall();
         }
     }
 
     protected void Move()
     {
+        OnMove?.Invoke(Mathf.Abs(input.movement));
         transform.position += Vector3.right * input.movement * stats.speed * speedMultiplier * Time.deltaTime;
         character.flipX = input.movement < 0;
     }
 
     protected void Jump()
     {
+        OnJump?.Invoke();
         grounded = false;
         canJump = false;
         rb.velocity = Vector2.up * stats.jumpForce;
@@ -66,6 +65,7 @@ public abstract class Player : MonoBehaviour
 
     protected void Fall()
     {
+        OnFall?.Invoke(rb.velocity.y);
         rb.velocity += Vector2.up * Physics2D.gravity.y * (stats.fallForce - 1) * Time.deltaTime;
     }
 

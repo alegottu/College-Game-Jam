@@ -206,6 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audio: {fileID: 4343242613174533068}
   anim: {fileID: 8370553593650608831}
+  sprite: {fileID: 279826229744728942}
   enemy: {fileID: 0}
 --- !u!95 &8370553593650608831
 Animator:

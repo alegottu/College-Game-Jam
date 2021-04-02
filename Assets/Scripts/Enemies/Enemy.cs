@@ -1,12 +1,14 @@
 ﻿using UnityEngine;
+using System;
 
 public abstract class Enemy : MonoBehaviour
 {
+    public event Action OnAttack;
+    public event Action<float> OnMove;
     public Health player = null;
 
     [SerializeField] protected EnemyStats stats = null;
     [SerializeField] protected SpriteRenderer sprite = null;
-    [SerializeField] protected Animator anim = null;
     [SerializeField] protected int difficultyMultiplier = 1;
 
     protected Vector3 direction = Vector3.right;
@@ -30,6 +32,7 @@ public abstract class Enemy : MonoBehaviour
             return;
         }
 
+        OnMove?.Invoke(direction.x);
         ChangeDirection();
         Move();
     }
@@ -44,8 +47,6 @@ public abstract class Enemy : MonoBehaviour
         {
             direction = Vector3.zero;
         }
-
-        sprite.flipX = direction.x > 0;
     }
 
     protected virtual void Move()
@@ -60,8 +61,8 @@ public abstract class Enemy : MonoBehaviour
 
     protected virtual void Attack()
     {
+        OnAttack?.Invoke();
         attackTimer = stats.attackSpeed;
-        anim.SetTrigger("Attack"); // Ensure all animation controllers for enemy prefabs have this trigger
     }
 
     // Default method for melee enemies; override completely for different cases
