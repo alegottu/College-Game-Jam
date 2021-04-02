@@ -47,6 +47,11 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1849744644950789396, guid: 449b7936de05ec04784d3e315c6e178d,
+        type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 2130429613096123209}
     - target: {fileID: 2252336104433437028, guid: 449b7936de05ec04784d3e315c6e178d,
         type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
@@ -170,3 +175,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 449b7936de05ec04784d3e315c6e178d, type: 3}
+--- !u!95 &2130429613096123209 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1591101709513135025, guid: 449b7936de05ec04784d3e315c6e178d,
+    type: 3}
+  m_PrefabInstance: {fileID: 829916741975746808}
+  m_PrefabAsset: {fileID: 0}

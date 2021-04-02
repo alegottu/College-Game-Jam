@@ -7,16 +7,21 @@ public class ExtenderEnemy : Enemy
     protected override void Update()
     {
         attackTimer -= Time.deltaTime;
-    }
-
-    protected override void FixedUpdate()
-    {
-        base.FixedUpdate();
 
         if (input.jumpEnter)
         {
             // Attack animation should stretch this enemy upwards and change their hitbox to follow suit
             Attack();
+        }
+    }
+
+    protected override void OnTriggerEnter2D(Collider2D other)
+    {
+        base.OnTriggerEnter2D(other);
+
+        if (inRange)
+        {
+            player.TakeDamage(stats.damage);
         }
     }
 }

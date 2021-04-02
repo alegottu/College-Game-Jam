@@ -4,7 +4,8 @@ using System;
 public abstract class Player : MonoBehaviour
 {
     public static event Action<Player> OnPlayerEnter;
-    public event Action OnPlayerExit;
+    public event Action<float> OnMove, OnFall;
+    public event Action OnPlayerExit, OnJump, OnLanding;
 
     [HideInInspector] public float speedMultiplier = 1;
     [HideInInspector] public float damageMultipier = 1;
@@ -49,12 +50,14 @@ public abstract class Player : MonoBehaviour
 
     protected void Move()
     {
+        OnMove?.Invoke(Mathf.Abs(input.movement));
         transform.position += Vector3.right * input.movement * stats.speed * speedMultiplier * Time.deltaTime;
         character.flipX = input.movement < 0;
     }
 
     protected void Jump()
     {
+        OnJump?.Invoke();
         grounded = false;
         canJump = false;
         rb.velocity = Vector2.up * stats.jumpForce;
@@ -62,12 +65,19 @@ public abstract class Player : MonoBehaviour
 
     protected void Fall()
     {
+        OnFall?.Invoke(rb.velocity.y);
         rb.velocity += Vector2.up * Physics2D.gravity.y * (stats.fallForce - 1) * Time.deltaTime;
     }
 
     protected virtual void OnCollisionEnter2D()
     {
+        OnLanding?.Invoke();
         grounded = true;
+    }
+
+    public bool IsGrounded()
+    {
+        return grounded;
     }
 
     protected virtual void OnDisable()

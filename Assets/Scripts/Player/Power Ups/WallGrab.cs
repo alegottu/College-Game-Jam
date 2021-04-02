@@ -3,24 +3,33 @@
 public class WallGrab : PowerUp<Rigidbody2D>
 {
     private PlayerInput input = null;
-    private float gravity = 1;
+    private LayerMask grabbable;
+    private Vector2 playerSize = Vector2.zero;
+    private RaycastHit2D wallHit = new RaycastHit2D();
 
-    private void Awake()
+    public void SetUp(GameObject graphic, LayerMask grabbable)
     {
+        SetGraphic(graphic);
         affected = gameObject.GetComponent<Rigidbody2D>();
         input = gameObject.GetComponent<PlayerInput>();
-        gravity = affected.gravityScale;
+        this.grabbable = grabbable;
+        playerSize = gameObject.GetComponentInChildren<SpriteRenderer>().bounds.size;
     }
 
     private void Update()
     {
-        if (input.grab)
+        wallHit = Physics2D.BoxCast(new Vector2(transform.position.x + playerSize.x / 2, transform.position.y), playerSize, 0f, new Vector2(input.movement, 0).normalized, playerSize.x, grabbable);
+        Vector2 velocity = affected.velocity;
+
+        if (input.grab && wallHit)
         {
-            affected.gravityScale = 0;
+            affected.velocity = new Vector2(affected.velocity.x, 0);
+            AnimateUse();
         }
         else
         {
-            affected.gravityScale = gravity;
+            affected.velocity = velocity;
+            AnimateRestore();
         }
     }
 }

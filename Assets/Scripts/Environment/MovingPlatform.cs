@@ -9,12 +9,12 @@ public class MovingPlatform : Platform
 
     protected override void OnPlayerEnter()
     {
-        // Control animation
+        player.transform.parent = transform;
     }
 
     protected override void OnPlayerExit()
     {
-       // Exit animation
+        player.transform.parent = null;
     }
 
     private void FixedUpdate()

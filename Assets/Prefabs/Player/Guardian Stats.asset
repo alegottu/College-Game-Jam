@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Guardian Stats
   m_EditorClassIdentifier: 
   _speed: 5
-  _fallForce: 5
-  _jumpForce: 10
-  _maxVelocity: 5
+  _fallForce: 1.5
+  _jumpForce: 8
+  _maxVelocity: 1
