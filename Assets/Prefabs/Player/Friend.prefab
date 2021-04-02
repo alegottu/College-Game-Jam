@@ -17,7 +17,6 @@ MonoBehaviour:
   stats: {fileID: 11400000, guid: 0ada9353c554548448a5b4a8ec5790f8, type: 2}
   input: {fileID: 1091567529236043003}
   rb: {fileID: 5884715000131633230}
-  character: {fileID: 49108187088666621}
   sfx: {fileID: 990991220534932082}
   health: {fileID: 3265681486370270705}
 --- !u!114 &3265681486370270705
@@ -44,7 +43,7 @@ PrefabInstance:
     - target: {fileID: 2503037996409250655, guid: 26a6c0a2c142fd14c9a02645378ad874,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.5
+      value: 0.446592
       objectReference: {fileID: 0}
     - target: {fileID: 2503037996409250655, guid: 26a6c0a2c142fd14c9a02645378ad874,
         type: 3}
@@ -54,7 +53,7 @@ PrefabInstance:
     - target: {fileID: 2503037996409250655, guid: 26a6c0a2c142fd14c9a02645378ad874,
         type: 3}
       propertyPath: m_Offset.x
-      value: 0
+      value: 0.0015708357
       objectReference: {fileID: 0}
     - target: {fileID: 2503037996409250655, guid: 26a6c0a2c142fd14c9a02645378ad874,
         type: 3}
@@ -95,6 +94,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3121161879546260801, guid: 26a6c0a2c142fd14c9a02645378ad874,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.29656923
+      objectReference: {fileID: 0}
+    - target: {fileID: 3121161879546260801, guid: 26a6c0a2c142fd14c9a02645378ad874,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.24853867
+      objectReference: {fileID: 0}
+    - target: {fileID: 3121161879546260801, guid: 26a6c0a2c142fd14c9a02645378ad874,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0017153919
+      objectReference: {fileID: 0}
+    - target: {fileID: 3121161879546260801, guid: 26a6c0a2c142fd14c9a02645378ad874,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.6742693
       objectReference: {fileID: 0}
     - target: {fileID: 4283338411082340920, guid: 26a6c0a2c142fd14c9a02645378ad874,
         type: 3}
@@ -202,6 +221,21 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8083540296507319569, guid: 26a6c0a2c142fd14c9a02645378ad874,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8083540296507319569, guid: 26a6c0a2c142fd14c9a02645378ad874,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8083540296507319569, guid: 26a6c0a2c142fd14c9a02645378ad874,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.65
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26a6c0a2c142fd14c9a02645378ad874, type: 3}
 --- !u!1 &2794988929333475875 stripped
@@ -231,12 +265,6 @@ MonoBehaviour:
 --- !u!82 &990991220534932082 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 7528643396585353079, guid: 26a6c0a2c142fd14c9a02645378ad874,
-    type: 3}
-  m_PrefabInstance: {fileID: 7330637555312663813}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &49108187088666621 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 7283973879275922168, guid: 26a6c0a2c142fd14c9a02645378ad874,
     type: 3}
   m_PrefabInstance: {fileID: 7330637555312663813}
   m_PrefabAsset: {fileID: 0}

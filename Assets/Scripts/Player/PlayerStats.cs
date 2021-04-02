@@ -14,4 +14,7 @@ public class PlayerStats : ScriptableObject
 
     [SerializeField] private float _maxVelocity = 0;
     public float maxVelocity { get { return _maxVelocity; } }
+
+    [SerializeField] private float _coyoteTime = 0;
+    public float coyoteTime { get { return _coyoteTime; } }
 }

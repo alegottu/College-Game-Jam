@@ -13,13 +13,16 @@ public abstract class Player : MonoBehaviour
     [SerializeField] protected PlayerStats stats = null;
     [SerializeField] protected PlayerInput input = null;
     [SerializeField] protected Rigidbody2D rb = null;
-    [SerializeField] protected SpriteRenderer character = null;
     [SerializeField] protected AudioSource sfx = null;
 
     protected bool grounded = true;
     protected bool canJump = true;
+    protected bool coyoteTime = false;
+    protected float coyoteTimer = 0;
 
-    protected virtual void Awake()
+    protected const int ground = 3;
+
+    protected virtual void OnEnable()
     {
         OnPlayerEnter?.Invoke(this);
         AudioController.Instance.ChangeSFXTrack(sfx);
@@ -30,6 +33,18 @@ public abstract class Player : MonoBehaviour
         if (input.jumpExit)
         {
             canJump = true;
+        }
+
+        if (coyoteTime)
+        {
+            coyoteTimer += Time.deltaTime;
+
+            if (coyoteTimer >= stats.coyoteTime)
+            {
+                grounded = false;
+                coyoteTime = false;
+                coyoteTimer = 0;
+            }
         }
     }
 
@@ -50,9 +65,8 @@ public abstract class Player : MonoBehaviour
 
     protected void Move()
     {
-        OnMove?.Invoke(Mathf.Abs(input.movement));
+        OnMove?.Invoke(input.movement);
         transform.position += Vector3.right * input.movement * stats.speed * speedMultiplier * Time.deltaTime;
-        character.flipX = input.movement < 0;
     }
 
     protected void Jump()
@@ -69,15 +83,21 @@ public abstract class Player : MonoBehaviour
         rb.velocity += Vector2.up * Physics2D.gravity.y * (stats.fallForce - 1) * Time.deltaTime;
     }
 
-    protected virtual void OnCollisionEnter2D()
+    protected virtual void OnTriggerStay2D(Collider2D other)
     {
-        OnLanding?.Invoke();
-        grounded = true;
+        if (other.gameObject.layer == ground)
+        {
+            OnLanding?.Invoke();
+            grounded = true;
+        }
     }
 
-    public bool IsGrounded()
+    protected virtual void OnTriggerExit2D(Collider2D other)
     {
-        return grounded;
+        if (other.gameObject.layer == ground)
+        {
+            coyoteTime = true;
+        }
     }
 
     protected virtual void OnDisable()
