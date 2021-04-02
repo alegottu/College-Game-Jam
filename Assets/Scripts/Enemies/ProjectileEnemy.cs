@@ -6,9 +6,8 @@ public class ProjectileEnemy : Enemy
     [SerializeField] private Transform rotator = null;
     [SerializeField] private Transform shootPoint = null;
 
-    protected override void Attack()
+    public void OnAttackAnimated()
     {
-        base.Attack();
         GameObject newProjectile = Instantiate(projectile, shootPoint.position, rotator.rotation);
     }
 }

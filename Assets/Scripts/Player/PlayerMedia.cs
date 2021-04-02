@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerMedia : MonoBehaviour
 {
-    [SerializeField] private AudioSource audio = null;
+    [SerializeField] private AudioSource sfx = null;
     [SerializeField] private Animator anim = null;
     [SerializeField] private SpriteRenderer sprite = null;
     [SerializeField] private Player player = null;
