@@ -13,8 +13,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: {fileID: 0}
-  shrinkSize: {x: 1, y: 1, z: 1}
-  growSize: {x: 1, y: 1, z: 1}
+  anim: {fileID: 0}
+  shrunk: 0
+--- !u!95 &5457157631775934328
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7557939261383857558}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a8cfc7386f043e846b49e18200abda93, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &8373497039510079754
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42,10 +61,91 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shrinking Platform
       objectReference: {fileID: 0}
+    - target: {fileID: 5004390452396941716, guid: 127a669dae95441439a4831ba3809c12,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.2607546
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004390452396941716, guid: 127a669dae95441439a4831ba3809c12,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.77288103
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004390452396941716, guid: 127a669dae95441439a4831ba3809c12,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 1.1544256
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004390452396941716, guid: 127a669dae95441439a4831ba3809c12,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.38123512
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004390452396941716, guid: 127a669dae95441439a4831ba3809c12,
+        type: 3}
+      propertyPath: m_AutoTiling
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004390452396941716, guid: 127a669dae95441439a4831ba3809c12,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004390452396941716, guid: 127a669dae95441439a4831ba3809c12,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004390452396941716, guid: 127a669dae95441439a4831ba3809c12,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004390452396941716, guid: 127a669dae95441439a4831ba3809c12,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004390452396941716, guid: 127a669dae95441439a4831ba3809c12,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.drawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004390452396941716, guid: 127a669dae95441439a4831ba3809c12,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.3125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5004390452396941716, guid: 127a669dae95441439a4831ba3809c12,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.765625
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154734700935312501, guid: 127a669dae95441439a4831ba3809c12,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2165187966396033747, guid: c26c52c35ca330446a7419644c7d5607,
+        type: 3}
+    - target: {fileID: 7154734700935312501, guid: 127a669dae95441439a4831ba3809c12,
+        type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7507113913214881541, guid: 127a669dae95441439a4831ba3809c12,
         type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7507113913214881541, guid: 127a669dae95441439a4831ba3809c12,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.43243244
+      objectReference: {fileID: 0}
+    - target: {fileID: 7507113913214881541, guid: 127a669dae95441439a4831ba3809c12,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.40489796
       objectReference: {fileID: 0}
     - target: {fileID: 7507113913214881541, guid: 127a669dae95441439a4831ba3809c12,
         type: 3}

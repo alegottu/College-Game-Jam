@@ -31,7 +31,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c42ddb620093d4448a821b516ec22d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
+  anim: {fileID: 8620286572103351605}
   collider2d: {fileID: 5853546393536988467}
   timeToFall: 1
   restoreCooldown: 10
