@@ -1,7 +1,34 @@
 fileFormatVersion: 2
 guid: 55047326592d62642a5b46295f220878
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1551416509696585974
+    second: spr_expanding_platform_idle_strip9_0
+  - first:
+      213: -7964024506983341127
+    second: spr_expanding_platform_idle_strip9_1
+  - first:
+      213: 7537093866527963598
+    second: spr_expanding_platform_idle_strip9_2
+  - first:
+      213: 1351302654339403274
+    second: spr_expanding_platform_idle_strip9_3
+  - first:
+      213: -5169827665372360178
+    second: spr_expanding_platform_idle_strip9_4
+  - first:
+      213: -3819205729477463954
+    second: spr_expanding_platform_idle_strip9_5
+  - first:
+      213: 3394325488834128121
+    second: spr_expanding_platform_idle_strip9_6
+  - first:
+      213: 6718105117462806862
+    second: spr_expanding_platform_idle_strip9_7
+  - first:
+      213: -7147827930017259462
+    second: spr_expanding_platform_idle_strip9_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +59,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -41,12 +68,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -68,7 +95,43 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +140,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: spr_expanding_platform_idle_strip9_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 7
+        width: 148
+        height: 49
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0fcbd877e2487ae0800000000000000
+      internalID: -1551416509696585974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_expanding_platform_idle_strip9_1
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 10
+        width: 148
+        height: 46
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3a0c6f7e91a7190800000000000000
+      internalID: -7964024506983341127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_expanding_platform_idle_strip9_2
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 12
+        width: 148
+        height: 44
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9bc2930f2299860800000000000000
+      internalID: 7537093866527963598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_expanding_platform_idle_strip9_3
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 13
+        width: 148
+        height: 43
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e41f7ca9ac0c210800000000000000
+      internalID: 1351302654339403274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_expanding_platform_idle_strip9_4
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 13
+        width: 148
+        height: 43
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e025e7711251148b0800000000000000
+      internalID: -5169827665372360178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_expanding_platform_idle_strip9_5
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 12
+        width: 148
+        height: 44
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e60fb52cf947ffac0800000000000000
+      internalID: -3819205729477463954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_expanding_platform_idle_strip9_6
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 8
+        width: 148
+        height: 48
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f823065c011b1f20800000000000000
+      internalID: 3394325488834128121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_expanding_platform_idle_strip9_7
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 6
+        width: 148
+        height: 50
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41ca12a2018b3d50800000000000000
+      internalID: 6718105117462806862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_expanding_platform_idle_strip9_8
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 5
+        width: 148
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30a4b35e50ddcc90800000000000000
+      internalID: -7147827930017259462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

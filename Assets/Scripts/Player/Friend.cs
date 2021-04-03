@@ -4,8 +4,9 @@ public class Friend : Player
 {
     [SerializeField] private Health health;
 
-    private void OnEnable()
+    protected override void OnEnable()
     {
+        base.OnEnable();
         health.OnDeath += OnDeathEventHandler;
     }
 

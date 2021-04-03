@@ -24,6 +24,13 @@ public class SceneController : Singleton<SceneController>
         StartCoroutine(LevelProgress(lvl));
     }
 
+    public void Reload()
+    {
+        currentLevel = previousLevel;
+        previousLevel = currentLevel;
+        StartCoroutine(LevelProgress(currentLevel));
+    }
+
     public IEnumerator LevelProgress(string lvl)
     {
         AsyncOperation ao = SceneManager.LoadSceneAsync(lvl, LoadSceneMode.Additive);
@@ -104,6 +111,6 @@ public class SceneController : Singleton<SceneController>
     {
         LoadLevel("Menu");
         gameState.UpdateState(GameStateManager.GameState.PREGAME);
-        UnloadLevel("Main");
+        UnloadLevel();
     }
 }

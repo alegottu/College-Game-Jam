@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+// Try event-based input
 public class PlayerInput : MonoBehaviour
 {
     [HideInInspector] public float movement = 0;
