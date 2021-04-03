@@ -1,52 +1,58 @@
 fileFormatVersion: 2
-guid: 019c8c5892e59da49b11a1bf30ea0cd8
+guid: 3d1eddaa301f5b44cbfe277bd35da5f3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3597376982201007151
-    second: spr_extending_enemy_idle_strip15_0
+      213: -8412828245865724899
+    second: spr_extending_enemy_attack_strip15_0
   - first:
-      213: 8694937260973546585
-    second: spr_extending_enemy_idle_strip15_1
+      213: -77922175545891619
+    second: spr_extending_enemy_attack_strip15_1
   - first:
-      213: 5781722966263601277
-    second: spr_extending_enemy_idle_strip15_2
+      213: -281319150582734801
+    second: spr_extending_enemy_attack_strip15_2
   - first:
-      213: 7267333234945405922
-    second: spr_extending_enemy_idle_strip15_3
+      213: 5395890976133384078
+    second: spr_extending_enemy_attack_strip15_3
   - first:
-      213: 7492887926336473587
-    second: spr_extending_enemy_idle_strip15_4
+      213: 4427979811079886482
+    second: spr_extending_enemy_attack_strip15_4
   - first:
-      213: -1431586982308100537
-    second: spr_extending_enemy_idle_strip15_5
+      213: 8018682668526203797
+    second: spr_extending_enemy_attack_strip15_5
   - first:
-      213: -2710906387263267995
-    second: spr_extending_enemy_idle_strip15_6
+      213: -3714014917708380371
+    second: spr_extending_enemy_attack_strip15_6
   - first:
-      213: 981216461833794046
-    second: spr_extending_enemy_idle_strip15_7
+      213: -339254831781913393
+    second: spr_extending_enemy_attack_strip15_7
   - first:
-      213: -6216843860712833428
-    second: spr_extending_enemy_idle_strip15_8
+      213: -678572363471207643
+    second: spr_extending_enemy_attack_strip15_8
   - first:
-      213: -7673031515505695222
-    second: spr_extending_enemy_idle_strip15_9
+      213: -5562334463680662547
+    second: spr_extending_enemy_attack_strip15_9
   - first:
-      213: 4469425464554943071
-    second: spr_extending_enemy_idle_strip15_10
+      213: 1518476465713887820
+    second: spr_extending_enemy_attack_strip15_10
   - first:
-      213: 5143128055435956769
-    second: spr_extending_enemy_idle_strip15_11
+      213: -2704739547069737046
+    second: spr_extending_enemy_attack_strip15_11
   - first:
-      213: 2779589516299495368
-    second: spr_extending_enemy_idle_strip15_12
+      213: -3020177786050615007
+    second: spr_extending_enemy_attack_strip15_12
   - first:
-      213: 1761524508843460933
-    second: spr_extending_enemy_idle_strip15_13
+      213: -8175653349405407538
+    second: spr_extending_enemy_attack_strip15_13
   - first:
-      213: -5452855972038622314
-    second: spr_extending_enemy_idle_strip15_14
+      213: -2930782176272238922
+    second: spr_extending_enemy_attack_strip15_14
+  - first:
+      213: -7884721951760836587
+    second: spr_extending_enemy_attack_strip15_15
+  - first:
+      213: 5612158196232909855
+    second: spr_extending_enemy_attack_strip15_16
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -160,7 +166,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spr_extending_enemy_idle_strip15_0
+      name: spr_extending_enemy_attack_strip15_0
       rect:
         serializedVersion: 2
         x: 0
@@ -168,20 +174,20 @@ TextureImporter:
         width: 128
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d30eb4c1bc831ec0800000000000000
-      internalID: -3597376982201007151
+      spriteID: d140dc09841af3b80800000000000000
+      internalID: -8412828245865724899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_extending_enemy_idle_strip15_1
+      name: spr_extending_enemy_attack_strip15_1
       rect:
         serializedVersion: 2
         x: 128
@@ -189,41 +195,41 @@ TextureImporter:
         width: 128
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95cd2a00f5f9aa870800000000000000
-      internalID: 8694937260973546585
+      spriteID: dd42676b13a2beef0800000000000000
+      internalID: -77922175545891619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_extending_enemy_idle_strip15_2
+      name: spr_extending_enemy_attack_strip15_2
       rect:
         serializedVersion: 2
         x: 256
         y: 0
-        width: 128
+        width: 125
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d781cd9a76ecc3050800000000000000
-      internalID: 5781722966263601277
+      spriteID: f20600919bd881cf0800000000000000
+      internalID: -281319150582734801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_extending_enemy_idle_strip15_3
+      name: spr_extending_enemy_attack_strip15_3
       rect:
         serializedVersion: 2
         x: 384
@@ -231,20 +237,20 @@ TextureImporter:
         width: 128
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e3bf4db211cad460800000000000000
-      internalID: 7267333234945405922
+      spriteID: e878a2f014e02ea40800000000000000
+      internalID: 5395890976133384078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_extending_enemy_idle_strip15_4
+      name: spr_extending_enemy_attack_strip15_4
       rect:
         serializedVersion: 2
         x: 512
@@ -252,20 +258,20 @@ TextureImporter:
         width: 128
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f94917bed51cf760800000000000000
-      internalID: 7492887926336473587
+      spriteID: 29694008d28537d30800000000000000
+      internalID: 4427979811079886482
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_extending_enemy_idle_strip15_5
+      name: spr_extending_enemy_attack_strip15_5
       rect:
         serializedVersion: 2
         x: 640
@@ -273,20 +279,20 @@ TextureImporter:
         width: 128
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 746c376793bf12ce0800000000000000
-      internalID: -1431586982308100537
+      spriteID: 593f518f665184f60800000000000000
+      internalID: 8018682668526203797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_extending_enemy_idle_strip15_6
+      name: spr_extending_enemy_attack_strip15_6
       rect:
         serializedVersion: 2
         x: 768
@@ -294,20 +300,20 @@ TextureImporter:
         width: 128
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56bd5d7f00de06ad0800000000000000
-      internalID: -2710906387263267995
+      spriteID: d278d7b2c1b257cc0800000000000000
+      internalID: -3714014917708380371
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_extending_enemy_idle_strip15_7
+      name: spr_extending_enemy_attack_strip15_7
       rect:
         serializedVersion: 2
         x: 896
@@ -315,20 +321,20 @@ TextureImporter:
         width: 128
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef17e5f5c2bfd9d00800000000000000
-      internalID: 981216461833794046
+      spriteID: fccdd472789ba4bf0800000000000000
+      internalID: -339254831781913393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_extending_enemy_idle_strip15_8
+      name: spr_extending_enemy_attack_strip15_8
       rect:
         serializedVersion: 2
         x: 1024
@@ -336,20 +342,20 @@ TextureImporter:
         width: 128
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6eb42a627559b9a0800000000000000
-      internalID: -6216843860712833428
+      spriteID: 523c6e8d70a3596f0800000000000000
+      internalID: -678572363471207643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_extending_enemy_idle_strip15_9
+      name: spr_extending_enemy_attack_strip15_9
       rect:
         serializedVersion: 2
         x: 1152
@@ -357,20 +363,20 @@ TextureImporter:
         width: 128
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a06e7e77d7ae38590800000000000000
-      internalID: -7673031515505695222
+      spriteID: de3b66a964e9ec2b0800000000000000
+      internalID: -5562334463680662547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_extending_enemy_idle_strip15_10
+      name: spr_extending_enemy_attack_strip15_10
       rect:
         serializedVersion: 2
         x: 1280
@@ -378,20 +384,20 @@ TextureImporter:
         width: 128
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f52f1eca7c6960e30800000000000000
-      internalID: 4469425464554943071
+      spriteID: c4abaa2ec46b21510800000000000000
+      internalID: 1518476465713887820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_extending_enemy_idle_strip15_11
+      name: spr_extending_enemy_attack_strip15_11
       rect:
         serializedVersion: 2
         x: 1408
@@ -399,20 +405,20 @@ TextureImporter:
         width: 128
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1221b9a87bf006740800000000000000
-      internalID: 5143128055435956769
+      spriteID: aa715f656b5d67ad0800000000000000
+      internalID: -2704739547069737046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_extending_enemy_idle_strip15_12
+      name: spr_extending_enemy_attack_strip15_12
       rect:
         serializedVersion: 2
         x: 1536
@@ -420,20 +426,20 @@ TextureImporter:
         width: 128
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c76e6c20f5139620800000000000000
-      internalID: 2779589516299495368
+      spriteID: 1296def1e4c2616d0800000000000000
+      internalID: -3020177786050615007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_extending_enemy_idle_strip15_13
+      name: spr_extending_enemy_attack_strip15_13
       rect:
         serializedVersion: 2
         x: 1664
@@ -441,20 +447,20 @@ TextureImporter:
         width: 128
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54942c43531327810800000000000000
-      internalID: 1761524508843460933
+      spriteID: ec645fd589e3a8e80800000000000000
+      internalID: -8175653349405407538
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_extending_enemy_idle_strip15_14
+      name: spr_extending_enemy_attack_strip15_14
       rect:
         serializedVersion: 2
         x: 1792
@@ -462,14 +468,56 @@ TextureImporter:
         width: 128
         height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 693454742609354b0800000000000000
-      internalID: -5452855972038622314
+      spriteID: 6b63f3d7325c357d0800000000000000
+      internalID: -2930782176272238922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_extending_enemy_attack_strip15_15
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5181290f827d39290800000000000000
+      internalID: -7884721951760836587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_extending_enemy_attack_strip15_16
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 128
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1472cd152462ed40800000000000000
+      internalID: 5612158196232909855
       vertices: []
       indices: 
       edges: []

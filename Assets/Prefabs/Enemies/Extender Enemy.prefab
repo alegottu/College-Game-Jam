@@ -17,6 +17,22 @@ MonoBehaviour:
   sprite: {fileID: 7718528671249501647}
   difficultyMultiplier: 1
   input: {fileID: 0}
+--- !u!70 &4027686599644719937
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4105131452875157868}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 829789086b42bda45b6f18d424b2676d, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.06798446}
+  m_Size: {x: 0.5, y: 1.0357813}
+  m_Direction: 0
 --- !u!1001 &7565938074459043489
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35,6 +51,11 @@ PrefabInstance:
       propertyPath: enemy
       value: 
       objectReference: {fileID: 2457181356873526432}
+    - target: {fileID: 1604838471697733316, guid: a615a7b3192ce194ca9dc8ea8a619cc5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 2668453717698475455, guid: a615a7b3192ce194ca9dc8ea8a619cc5,
         type: 3}
       propertyPath: m_RootOrder
@@ -125,7 +146,13 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 9043073532735463530, guid: a615a7b3192ce194ca9dc8ea8a619cc5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 9043073532735463530, guid: a615a7b3192ce194ca9dc8ea8a619cc5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a615a7b3192ce194ca9dc8ea8a619cc5, type: 3}
 --- !u!1 &4105131452875157868 stripped
 GameObject:
