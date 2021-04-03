@@ -3,6 +3,7 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public abstract class PowerUp<Component> : MonoBehaviour
 {
+    protected int order = 0;
     protected Component affected = default;
     protected GameObject graphic = null;
     protected Light2D graphicLight = null;

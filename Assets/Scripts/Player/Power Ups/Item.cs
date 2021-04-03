@@ -2,6 +2,7 @@
 
 public abstract class Item : MonoBehaviour
 {
+    [SerializeField] protected int order = 0;
     [SerializeField] protected GameObject graphicPrefab = null;
 
     protected Player player = null;
@@ -9,11 +10,11 @@ public abstract class Item : MonoBehaviour
 
     protected abstract void OnPickUp();
 
-    // Create visual representation on the player
+    // Create visual representation for the player
     protected virtual void Awake()
     {
         GameObject newGraphic = Instantiate(graphicPrefab);
-        newGraphic.transform.parent = gameObject.transform;
+        newGraphic.SetActive(false);
         graphic = newGraphic;
     }
 
@@ -22,6 +23,7 @@ public abstract class Item : MonoBehaviour
         if (other.TryGetComponent(out Friend player))
         {
             this.player = player;
+            graphic.transform.parent = player.transform; 
             OnPickUp();
             Destroy(gameObject);
         }

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4283338411082340920}
-  - component: {fileID: 2503037996409250655}
+  - component: {fileID: 8417757117421780057}
   - component: {fileID: 3121161879546260801}
   - component: {fileID: 3751811959244119371}
   - component: {fileID: 7682488842397125118}
@@ -39,8 +39,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2503037996409250655
-BoxCollider2D:
+--- !u!70 &8417757117421780057
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -53,18 +53,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Size: {x: 0.5, y: 1}
+  m_Direction: 0
 --- !u!61 &3121161879546260801
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -125,14 +115,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: 0
-  mousePos: {x: 0, y: 0, z: 0}
   attack: 0
   jump: 0
   jumpEnter: 0
   jumpExit: 0
   grab: 0
+  grabEnter: 0
   smoothRate: 0.25
-  cam: {fileID: 0}
 --- !u!114 &4569015131989121832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,6 +138,7 @@ MonoBehaviour:
   anim: {fileID: 7282686607254762966}
   sprite: {fileID: 7283973879275922168}
   player: {fileID: 0}
+  input: {fileID: 7682488842397125118}
 --- !u!82 &7528643396585353079
 AudioSource:
   m_ObjectHideFlags: 0

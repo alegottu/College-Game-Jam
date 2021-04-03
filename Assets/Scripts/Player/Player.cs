@@ -83,7 +83,7 @@ public abstract class Player : MonoBehaviour
         rb.velocity += Vector2.up * Physics2D.gravity.y * (stats.fallForce - 1) * Time.deltaTime;
     }
 
-    protected virtual void OnTriggerStay2D(Collider2D other)
+    protected virtual void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.layer == ground)
         {
@@ -96,6 +96,7 @@ public abstract class Player : MonoBehaviour
     {
         if (other.gameObject.layer == ground)
         {
+            OnFall?.Invoke(rb.velocity.y);
             coyoteTime = true;
         }
     }
