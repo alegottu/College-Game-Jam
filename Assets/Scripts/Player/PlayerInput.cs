@@ -12,17 +12,17 @@ public class PlayerInput : MonoBehaviour
     [HideInInspector] public bool jumpExit = false;
     [HideInInspector] public bool grab = false;
     [HideInInspector] public bool grabEnter = false;
-
-    [SerializeField] private float smoothRate = 1;
+    [HideInInspector] public bool dash = false;
 
     private void Update()
     {
-        movement = Mathf.MoveTowards(movement, InputManager.Instance.GetAxisRaw("Horizontal"), smoothRate);
+        movement = InputManager.Instance.GetAxisRaw("Horizontal");
         attack = InputManager.Instance.GetButtonDown("Attack");
         jump = InputManager.Instance.GetButton("Jump");
         jumpEnter = InputManager.Instance.GetButtonDown("Jump");
         jumpExit = InputManager.Instance.GetButtonUp("Jump");
         grab = InputManager.Instance.GetButton("Grab");
         grabEnter = InputManager.Instance.GetButtonDown("Grab");
+        dash = InputManager.Instance.GetButtonDown("Dash");
     }
 }

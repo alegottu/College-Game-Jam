@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &2332631855956286820
+--- !u!1001 &4595449208134299285
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,22 +10,22 @@ PrefabInstance:
     - target: {fileID: 2961480904672843091, guid: e0688b5910cc29a459d06640165ec155,
         type: 3}
       propertyPath: m_Name
-      value: Sadness Orb
+      value: Anger Orb
       objectReference: {fileID: 0}
     - target: {fileID: 5593613054426274311, guid: e0688b5910cc29a459d06640165ec155,
         type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.28773582
       objectReference: {fileID: 0}
     - target: {fileID: 5593613054426274311, guid: e0688b5910cc29a459d06640165ec155,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.4169605
+      value: 0.28773582
       objectReference: {fileID: 0}
     - target: {fileID: 5593613054426274311, guid: e0688b5910cc29a459d06640165ec155,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.3160377
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5807979387488855971, guid: e0688b5910cc29a459d06640165ec155,
         type: 3}
@@ -96,7 +96,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 2524979381220260353, guid: 7e9364d718d5d754c85c9339bee73424,
+      objectReference: {fileID: 200874591186100904, guid: 7e9364d718d5d754c85c9339bee73424,
         type: 3}
     - target: {fileID: 9057837897558359931, guid: e0688b5910cc29a459d06640165ec155,
         type: 3}

@@ -139,7 +139,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &9043073532735463530
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -204,7 +204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa04c1505098b148a8a5c7ea02078d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio: {fileID: 4343242613174533068}
+  sfx: {fileID: 4343242613174533068}
   anim: {fileID: 8370553593650608831}
   sprite: {fileID: 279826229744728942}
   enemy: {fileID: 0}

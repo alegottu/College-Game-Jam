@@ -5,13 +5,20 @@ public abstract class PowerUp<Component> : MonoBehaviour
 {
     protected int order = 0;
     protected Component affected = default;
+    protected Vector2 playerSize = Vector2.zero;
     protected GameObject graphic = null;
     protected Light2D graphicLight = null;
 
-    public virtual void SetGraphic(GameObject graphic)
+    public virtual void SetUp(GameObject graphic, int order)
     {
         this.graphic = graphic;
         graphicLight = graphic.GetComponent<Light2D>();
+
+        this.order = order;
+        playerSize = gameObject.GetComponentInChildren<SpriteRenderer>().bounds.size;
+
+        graphic.transform.position = gameObject.transform.position + new Vector3(-playerSize.x / (order + 1), playerSize.y);
+        graphic.SetActive(true);
     }
 
     protected virtual void AnimateUse()

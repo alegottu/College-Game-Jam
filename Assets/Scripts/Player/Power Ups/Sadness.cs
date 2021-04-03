@@ -8,6 +8,7 @@ public class Sadness : Item
     protected override void OnPickUp()
     {
         WallGrab wallGrab = player.gameObject.AddComponent<WallGrab>();
-        wallGrab.SetUp(graphic, order, wallJumpForce,  grabbable);
+        wallGrab.SetUp(graphic, order);
+        wallGrab.SetStats(wallJumpForce, grabbable);
     }
 }

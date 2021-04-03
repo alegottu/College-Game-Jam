@@ -1,25 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &7268190804697883818
+--- !u!114 &2708605767570584152
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1286915717564710229}
+  m_GameObject: {fileID: 1470237869307087976}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a92b9c25c5a03e244b0652eb19d1d3ef, type: 3}
+  m_Script: {fileID: 11500000, guid: aa0ef216ed0efed46adea2316944d2c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  order: 0
-  graphicPrefab: {fileID: 668335262533175351, guid: da88f2241b0180e41ba6e9ae1188bf23,
+  order: 1
+  graphicPrefab: {fileID: 1648066243297639366, guid: 18dfce1755cbb56449b362be7c52320d,
     type: 3}
-  wallJumpForce: 5
-  grabbable:
-    serializedVersion: 2
-    m_Bits: 8
---- !u!1001 &7478261217309079304
+  dashSpeed: 10
+  dashDuration: 0.25
+  cooldown: 1
+--- !u!1001 &7094084752602711605
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -81,47 +80,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5114162508554103180, guid: bf8c45b57cf036841803bf058303fb25,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5114162508554103180, guid: bf8c45b57cf036841803bf058303fb25,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 6951657370199427022, guid: bf8c45b57cf036841803bf058303fb25,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 2524979381220260353, guid: 7e9364d718d5d754c85c9339bee73424,
+      objectReference: {fileID: 200874591186100904, guid: 7e9364d718d5d754c85c9339bee73424,
         type: 3}
-    - target: {fileID: 6951657370199427022, guid: bf8c45b57cf036841803bf058303fb25,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6951657370199427022, guid: bf8c45b57cf036841803bf058303fb25,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6951657370199427022, guid: bf8c45b57cf036841803bf058303fb25,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8508449727183194717, guid: bf8c45b57cf036841803bf058303fb25,
         type: 3}
       propertyPath: m_Name
-      value: Sadness
+      value: Anger
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf8c45b57cf036841803bf058303fb25, type: 3}
---- !u!1 &1286915717564710229 stripped
+--- !u!1 &1470237869307087976 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8508449727183194717, guid: bf8c45b57cf036841803bf058303fb25,
     type: 3}
-  m_PrefabInstance: {fileID: 7478261217309079304}
+  m_PrefabInstance: {fileID: 7094084752602711605}
   m_PrefabAsset: {fileID: 0}

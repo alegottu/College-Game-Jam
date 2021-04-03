@@ -6,25 +6,18 @@ public class WallGrab : PowerUp<Rigidbody2D>
     private Animator playerAnim = null;
     private float wallJumpForce = 0;
     private LayerMask grabbable;
-    private Vector2 playerSize = Vector2.zero;
 
     private RaycastHit2D wallHit = new RaycastHit2D();
     private bool grabbing = false;
 
-    public void SetUp(GameObject graphic, int order, float wallJumpForce, LayerMask grabbable)
+    public void SetStats(float wallJumpForce, LayerMask grabbable)
     {
-        this.order = order;
         this.wallJumpForce = wallJumpForce;
         this.grabbable = grabbable;
-        SetGraphic(graphic);
 
         affected = gameObject.GetComponent<Rigidbody2D>();
         input = gameObject.GetComponent<PlayerInput>();
         playerAnim = gameObject.GetComponent<Animator>();
-        playerSize = gameObject.GetComponentInChildren<SpriteRenderer>().bounds.size;
-
-        graphic.transform.position = gameObject.transform.position + new Vector3(-playerSize.x, playerSize.y);
-        graphic.SetActive(true);
     }
 
     private void FixedUpdate()
