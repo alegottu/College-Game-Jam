@@ -50,4 +50,9 @@ public class InputManager : Singleton<InputManager>
     {
         return Input.GetAxisRaw(axis);
     }
+    
+    public float GetAxis(string axis)
+    {
+        return Input.GetAxis(axis);
+    }
 }

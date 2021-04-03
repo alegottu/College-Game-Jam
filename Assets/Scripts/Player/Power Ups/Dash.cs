@@ -44,11 +44,18 @@ public class Dash : PowerUp<Rigidbody2D>
 
         cooldownTimer -= Time.deltaTime;
 
-        if (cooldownTimer <= 0 && input.dash)
+        if (cooldownTimer <= 0)
         {
-            dashing = true;
-            cooldownTimer = cooldown;
-            direction = Vector2.right * input.movement;
+            AnimateRestore();
+
+            if (input.dash)
+            {
+                AnimateUse();
+
+                dashing = true;
+                cooldownTimer = cooldown;
+                direction = Vector2.right * input.movement;
+            }
         }
     }
 }

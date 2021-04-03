@@ -16,7 +16,7 @@ public class PlayerInput : MonoBehaviour
 
     private void Update()
     {
-        movement = InputManager.Instance.GetAxisRaw("Horizontal");
+        movement = InputManager.Instance.GetAxis("Horizontal");
         attack = InputManager.Instance.GetButtonDown("Attack");
         jump = InputManager.Instance.GetButton("Jump");
         jumpEnter = InputManager.Instance.GetButtonDown("Jump");
