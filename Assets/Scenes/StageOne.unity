@@ -11247,11 +11247,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Guardian
       objectReference: {fileID: 0}
+    - target: {fileID: 765398006312450456, guid: d2c7ecabbcbddbe4084146f2045f5562,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2314632241277823028, guid: d2c7ecabbcbddbe4084146f2045f5562,
         type: 3}
       propertyPath: cam
       value: 
       objectReference: {fileID: 1664544942}
+    - target: {fileID: 6933598595906704195, guid: d2c7ecabbcbddbe4084146f2045f5562,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6933598595906704195, guid: d2c7ecabbcbddbe4084146f2045f5562,
         type: 3}
       propertyPath: emotionItem
@@ -12915,6 +12925,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Friend
+      objectReference: {fileID: 0}
+    - target: {fileID: 3133264211748199872, guid: a9c671a37fc382242b7833b3f2b9cb1b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6544802327202891309, guid: a9c671a37fc382242b7833b3f2b9cb1b,
         type: 3}
