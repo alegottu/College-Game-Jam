@@ -14241,6 +14241,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Friend
       objectReference: {fileID: 0}
+    - target: {fileID: 3133264211748199872, guid: a9c671a37fc382242b7833b3f2b9cb1b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6830502215641581373, guid: a9c671a37fc382242b7833b3f2b9cb1b,
         type: 3}
       propertyPath: m_RootOrder
@@ -14647,6 +14652,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Guardian
       objectReference: {fileID: 0}
+    - target: {fileID: 765398006312450456, guid: d2c7ecabbcbddbe4084146f2045f5562,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6933598595906704195, guid: d2c7ecabbcbddbe4084146f2045f5562,
         type: 3}
       propertyPath: emotionItem
@@ -14717,7 +14727,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1758365567}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fd9037eadb426f42827bce6dff37775, type: 3}
   m_Name: 

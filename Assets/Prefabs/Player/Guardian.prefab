@@ -7,7 +7,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 716341444333455084}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fd9037eadb426f42827bce6dff37775, type: 3}
   m_Name: 
@@ -143,6 +143,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 6933598595906704195}
+    - target: {fileID: 4620036031599073362, guid: 26a6c0a2c142fd14c9a02645378ad874,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4620036031599073362, guid: 26a6c0a2c142fd14c9a02645378ad874,
         type: 3}
       propertyPath: m_Intensity
@@ -308,7 +313,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 5369019888918356426}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
