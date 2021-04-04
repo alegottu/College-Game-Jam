@@ -8,7 +8,8 @@ public class InputManager : Singleton<InputManager>
     {
         ["Dash"] = KeyCode.LeftShift,
         ["Grab"] = KeyCode.LeftControl,
-        ["Attack"] = KeyCode.Mouse0,
+        ["Primary"] = KeyCode.Mouse0,
+        ["Secondary"] = KeyCode.Mouse1,
         ["Jump"] = KeyCode.Space
     };
 

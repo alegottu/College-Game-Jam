@@ -6,7 +6,8 @@ public class PlayerInput : MonoBehaviour
     // make read-only outside of this script
 
     [HideInInspector] public float movement = 0;
-    [HideInInspector] public bool attack = false;
+    [HideInInspector] public bool primary = false;
+    [HideInInspector] public bool secondary = false;
     [HideInInspector] public bool jump = false;
     [HideInInspector] public bool jumpEnter = false;
     [HideInInspector] public bool jumpExit = false;
@@ -17,7 +18,8 @@ public class PlayerInput : MonoBehaviour
     private void Update()
     {
         movement = InputManager.Instance.GetAxis("Horizontal");
-        attack = InputManager.Instance.GetButtonDown("Attack");
+        primary = InputManager.Instance.GetButtonDown("Primary");
+        secondary = InputManager.Instance.GetButtonDown("Secondary");
         jump = InputManager.Instance.GetButton("Jump");
         jumpEnter = InputManager.Instance.GetButtonDown("Jump");
         jumpExit = InputManager.Instance.GetButtonUp("Jump");

@@ -21,13 +21,13 @@ public class Guardian : Player
     {
         base.Update();
 
-        if (lightsUsed < lightAmount && input.attack )
+        if (lightsUsed < lightAmount && input.primary )
         {
             lightsUsed++;
             GameObject newLight = Instantiate(lightPrefab, transform.position, Quaternion.identity);
         }
 
-        if (emotionItem != null && input.grab)
+        if (emotionItem != null && input.secondary)
         {
             GameObject emotion = Instantiate(emotionItem, transform.position, Quaternion.identity);
             emotionItem = null;

@@ -1,13 +1,16 @@
 ﻿using UnityEngine;
 
-public class Pause : GameplayUIElement, IMenuButton
+public class Pause : MonoBehaviour
 {
     [SerializeField] private GameStateManager gameState = null;
     [SerializeField] private GameObject pauseMenu = null;
 
-    public void OnClick()
+    private void Update()
     {
-        gameState.TogglePause();
-        pauseMenu.SetActive(!pauseMenu.activeSelf);
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            gameState.TogglePause();
+            pauseMenu.SetActive(true);
+        }
     }
 }

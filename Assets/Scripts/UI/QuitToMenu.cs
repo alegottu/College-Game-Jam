@@ -2,10 +2,12 @@
 
 public class QuitToMenu : SceneTransition, IMenuButton
 {
+    [SerializeField] private GameObject pauseMenu = null;
+
     public void OnClick()
     {
-        transform.parent.gameObject.SetActive(false);
-        SceneController.Instance.UnloadLevel("MapPhase");
+        pauseMenu.SetActive(false);
+        SceneController.Instance.UnloadLevel();
         SceneController.Instance.LoadLevel("Menu");
     }
 }
