@@ -4,7 +4,10 @@ public class Spikes : Platform
 {
     protected override void OnPlayerEnter()
     {
-        player.GetComponent<Health>().Die();
+        if (player.gameObject.TryGetComponent(out Health health))
+        {
+            health.Die();
+        }
     }
 
     protected override void OnPlayerExit()

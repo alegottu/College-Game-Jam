@@ -8,7 +8,7 @@ public class ExtenderEnemy : Enemy
     {
         attackTimer -= Time.deltaTime;
 
-        if (input.jumpEnter)
+        if (attackTimer <= 0 && input.jumpEnter)
         {
             // Attack animation should stretch this enemy upwards and change their hitbox to follow suit
             Attack();

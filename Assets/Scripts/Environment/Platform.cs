@@ -18,7 +18,7 @@ public abstract class Platform : MonoBehaviour
 
     protected virtual void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.Equals(player.gameObject))
+        if (player && collision.gameObject.Equals(player.gameObject))
         {
             OnPlayerExit();
             player = null;

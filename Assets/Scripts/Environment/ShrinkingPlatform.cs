@@ -10,7 +10,7 @@ public class ShrinkingPlatform : MonoBehaviour
     {
         if (shrunk)
         {
-            anim.SetTrigger("shrink");
+            anim.SetTrigger("Shrink");
         }
     }
 

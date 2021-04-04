@@ -18,6 +18,9 @@ MonoBehaviour:
   input: {fileID: 1091567529236043003}
   rb: {fileID: 5884715000131633230}
   sfx: {fileID: 990991220534932082}
+  ground:
+    serializedVersion: 2
+    m_Bits: 8
   health: {fileID: 3265681486370270705}
 --- !u!114 &3265681486370270705
 MonoBehaviour:
@@ -98,22 +101,22 @@ PrefabInstance:
     - target: {fileID: 3121161879546260801, guid: 26a6c0a2c142fd14c9a02645378ad874,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.29656923
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 3121161879546260801, guid: 26a6c0a2c142fd14c9a02645378ad874,
         type: 3}
       propertyPath: m_Size.y
-      value: 0.24853867
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3121161879546260801, guid: 26a6c0a2c142fd14c9a02645378ad874,
         type: 3}
       propertyPath: m_Offset.x
-      value: 0.0017153919
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3121161879546260801, guid: 26a6c0a2c142fd14c9a02645378ad874,
         type: 3}
       propertyPath: m_Offset.y
-      value: -0.6742693
+      value: -0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4283338411082340920, guid: 26a6c0a2c142fd14c9a02645378ad874,
         type: 3}

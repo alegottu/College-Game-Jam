@@ -27,6 +27,8 @@ public class GameOverEvent : SceneTransition
     {
         base.OnDisable();
         Player.OnPlayerEnter -= OnPlayerEnterEventHandler;
-        player.OnDeath -= OnPlayerDeathEventHandler;
+
+        if (player)
+            player.OnDeath -= OnPlayerDeathEventHandler;
     }
 }

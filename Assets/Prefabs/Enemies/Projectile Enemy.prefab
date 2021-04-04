@@ -103,6 +103,26 @@ Transform:
   m_Father: {fileID: 5131522142841150641}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1849744644950789396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3619015507945336515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e20f16a8512060544ac47defa9436f6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  stats: {fileID: 11400000, guid: 34589a82f2544f34c9ba067532f438d0, type: 2}
+  sprite: {fileID: 7051705519544767072}
+  difficultyMultiplier: 1
+  projectile: {fileID: 5287666615255538254, guid: c039af25eac45ac439716d22910f74e1,
+    type: 3}
+  rotator: {fileID: 5733916187829600106}
+  shootPoint: {fileID: 6068842508463269588}
 --- !u!1 &5239037865876328037
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,26 +153,6 @@ Transform:
   m_Father: {fileID: 5733916187829600106}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1849744644950789396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3619015507945336515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e20f16a8512060544ac47defa9436f6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  stats: {fileID: 11400000, guid: 34589a82f2544f34c9ba067532f438d0, type: 2}
-  sprite: {fileID: 7051705519544767072}
-  difficultyMultiplier: 1
-  projectile: {fileID: 5287666615255538254, guid: c039af25eac45ac439716d22910f74e1,
-    type: 3}
-  rotator: {fileID: 5733916187829600106}
-  shootPoint: {fileID: 6068842508463269588}
 --- !u!1001 &7079259181595093262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -250,6 +250,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5236516171025747137, guid: a615a7b3192ce194ca9dc8ea8a619cc5,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5766797586121082829, guid: a615a7b3192ce194ca9dc8ea8a619cc5,
         type: 3}

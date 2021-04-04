@@ -14,13 +14,19 @@ public abstract class Player : MonoBehaviour
     [SerializeField] protected PlayerInput input = null;
     [SerializeField] protected Rigidbody2D rb = null;
     [SerializeField] protected AudioSource sfx = null;
+    [SerializeField] protected LayerMask ground = new LayerMask();
 
+    protected RaycastHit2D groundHit = new RaycastHit2D();
+    protected Vector2 playerSize = Vector2.zero;
     protected bool grounded = true;
     protected bool canJump = true;
     protected bool coyoteTime = false;
     protected float coyoteTimer = 0;
 
-    protected const int ground = 3;
+    protected virtual void Awake()
+    {
+        playerSize = gameObject.GetComponentInChildren<SpriteRenderer>().bounds.size;
+    }
 
     protected virtual void OnEnable()
     {
@@ -51,6 +57,7 @@ public abstract class Player : MonoBehaviour
     protected virtual void FixedUpdate()
     {
         Move();
+        CheckGround();
 
         if (canJump && grounded && input.jump)
         {
@@ -69,6 +76,21 @@ public abstract class Player : MonoBehaviour
         transform.position += Vector3.right * input.movement * stats.speed * speedMultiplier * Time.deltaTime;
     }
 
+    protected void CheckGround()
+    {
+        groundHit = Physics2D.BoxCast(transform.position - new Vector3(0, playerSize.y / 2), new Vector2(playerSize.x / 2, 0.5f), 0f, Vector2.down, 0.5f, ground);
+
+        if (groundHit)
+        {
+            OnLanding?.Invoke();
+            grounded = true;
+        }
+        else
+        {
+            coyoteTime = true;
+        }
+    }
+
     protected void Jump()
     {
         OnJump?.Invoke();
@@ -81,24 +103,6 @@ public abstract class Player : MonoBehaviour
     {
         OnFall?.Invoke(rb.velocity.y);
         rb.velocity += Vector2.up * Physics2D.gravity.y * (stats.fallForce - 1) * Time.deltaTime;
-    }
-
-    protected virtual void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.layer == ground)
-        {
-            OnLanding?.Invoke();
-            grounded = true;
-        }
-    }
-
-    protected virtual void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.gameObject.layer == ground)
-        {
-            OnFall?.Invoke(rb.velocity.y);
-            coyoteTime = true;
-        }
     }
 
     protected virtual void OnDisable()

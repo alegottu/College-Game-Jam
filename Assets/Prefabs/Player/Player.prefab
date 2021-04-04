@@ -48,7 +48,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 4860056465418659622}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d6cd8dc4ad3a2754aa20ca89aac4a37e, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -115,13 +115,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: 0
-  attack: 0
+  primary: 0
+  secondary: 0
   jump: 0
   jumpEnter: 0
   jumpExit: 0
   grab: 0
   grabEnter: 0
-  smoothRate: 0.25
+  dash: 0
 --- !u!114 &4569015131989121832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,7 +139,6 @@ MonoBehaviour:
   anim: {fileID: 7282686607254762966}
   sprite: {fileID: 7283973879275922168}
   player: {fileID: 0}
-  input: {fileID: 7682488842397125118}
 --- !u!82 &7528643396585353079
 AudioSource:
   m_ObjectHideFlags: 0
