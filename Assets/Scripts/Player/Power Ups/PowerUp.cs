@@ -17,7 +17,7 @@ public abstract class PowerUp<Component> : MonoBehaviour
         this.order = order;
         playerSize = gameObject.GetComponentInChildren<SpriteRenderer>().bounds.size;
 
-        graphic.transform.position = gameObject.transform.position + new Vector3(-playerSize.x / (order + 1), playerSize.y);
+        graphic.transform.position = gameObject.transform.position + new Vector3(-playerSize.x * 2 / (order + 1), playerSize.y);
         graphic.SetActive(true);
     }
 

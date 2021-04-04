@@ -21,6 +21,11 @@ public class InputManager : Singleton<InputManager>
         }
     }
 
+    public KeyCode ReadBinding(string button)
+    {
+        return Buttons[button];
+    }
+
     private void TestKey(string key)
     {
         if (!Buttons.ContainsKey(key))
