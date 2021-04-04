@@ -16,4 +16,4 @@ MonoBehaviour:
   _fallForce: 2
   _jumpForce: 6
   _maxVelocity: 1
-  _coyoteTime: 0.25
+  _coyoteTime: 0.1
