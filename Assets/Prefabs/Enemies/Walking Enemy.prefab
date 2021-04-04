@@ -131,6 +131,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Walking Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 8370553593650608831, guid: a615a7b3192ce194ca9dc8ea8a619cc5,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1c129e6af99ec9c43ad3d86906715e85, type: 2}
     - target: {fileID: 8488781300011369068, guid: a615a7b3192ce194ca9dc8ea8a619cc5,
         type: 3}
       propertyPath: m_Size.x

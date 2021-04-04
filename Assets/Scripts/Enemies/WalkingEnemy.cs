@@ -13,12 +13,12 @@ public class WalkingEnemy : Enemy
 
     protected override void FixedUpdate()
     {
-        if (transform.position.Equals(points[targetPoint].position))
+        if (Mathf.Approximately(transform.position.x,  points[targetPoint].position.x))
         {
             targetPoint = targetPoint == points.Length - 1 ? 0 : targetPoint + 1;
         }
 
-        direction = Vector3.MoveTowards(transform.position, points[targetPoint].position, stats.speed).normalized;
+        direction = Vector2.right * ((Vector2)points[targetPoint].position - (Vector2)transform.position).normalized;
         Move();
     }
 
