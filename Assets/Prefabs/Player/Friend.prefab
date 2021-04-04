@@ -183,6 +183,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 3133264211748199872}
+    - target: {fileID: 4620036031599073362, guid: 26a6c0a2c142fd14c9a02645378ad874,
+        type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4860056465418659622, guid: 26a6c0a2c142fd14c9a02645378ad874,
         type: 3}
       propertyPath: m_Name

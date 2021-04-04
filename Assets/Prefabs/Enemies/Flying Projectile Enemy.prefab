@@ -52,6 +52,12 @@ PrefabInstance:
       propertyPath: anim
       value: 
       objectReference: {fileID: 2130429613096123209}
+    - target: {fileID: 1849744644950789396, guid: 449b7936de05ec04784d3e315c6e178d,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 4084112206582859008, guid: 52de30559e1984e47bb544c5da2a1591,
+        type: 3}
     - target: {fileID: 2252336104433437028, guid: 449b7936de05ec04784d3e315c6e178d,
         type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
@@ -86,6 +92,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3068432393996199375, guid: 449b7936de05ec04784d3e315c6e178d,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3068432393996199375, guid: 449b7936de05ec04784d3e315c6e178d,
         type: 3}
@@ -152,6 +163,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5733916187829600106, guid: 449b7936de05ec04784d3e315c6e178d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5733916187829600106, guid: 449b7936de05ec04784d3e315c6e178d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5733916187829600106, guid: 449b7936de05ec04784d3e315c6e178d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7051705519544767072, guid: 449b7936de05ec04784d3e315c6e178d,
         type: 3}
       propertyPath: m_Sprite
@@ -172,6 +198,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8466506149697597655, guid: 449b7936de05ec04784d3e315c6e178d,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8466506149697597655, guid: 449b7936de05ec04784d3e315c6e178d,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.6750163
+      objectReference: {fileID: 0}
+    - target: {fileID: 8466506149697597655, guid: 449b7936de05ec04784d3e315c6e178d,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.4764151
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 449b7936de05ec04784d3e315c6e178d, type: 3}

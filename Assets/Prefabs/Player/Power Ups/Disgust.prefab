@@ -17,7 +17,8 @@ MonoBehaviour:
   order: 2
   graphicPrefab: {fileID: 4743910458284670288, guid: 0904757169d98ef45a07aa4e81ce9f26,
     type: 3}
-  parryForce: 25
+  parryForce: 5
+  parryTime: 1
   enemy:
     serializedVersion: 2
     m_Bits: 64

@@ -32,7 +32,10 @@ public class LevelManager : MonoBehaviour
 
     public void Reset() // Return to last checkpoint reached
     {
-        friend.transform.position = previous.transform.position;
-        guardian.transform.position = previous.transform.position;
+        if (friend)
+        {
+            friend.transform.position = previous.transform.position;
+            guardian.transform.position = previous.transform.position;
+        }
     }
 }
