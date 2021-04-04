@@ -983,7 +983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a1235c8ef2211a46a70ddc5c5fd8381, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: {fileID: 0}
+  music: {fileID: 1599620314}
 --- !u!1001 &1954871103
 PrefabInstance:
   m_ObjectHideFlags: 0

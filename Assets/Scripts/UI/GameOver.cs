@@ -11,7 +11,7 @@ public class GameOver : SceneTransition
 
     public void Retry()
     {
-        SceneController.Instance.Reload();
+        SceneController.Instance.LoadLevel(SceneController.Instance.previousLevel);
     }
 
     public void Quit()

@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Flying Bomber
+  m_Controller: {fileID: 9100000, guid: 7fbdf06f8c0cd0c4887788300e45ab3e, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: c435b39ce71caec468b1ec59c131a2be, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 350e11124ebe3a242a714d6d23ff1f08, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 0c35bc93b9535a146b616dae57562a63, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a7568d123e2a6ec4eb6802d1ad2de033, type: 2}

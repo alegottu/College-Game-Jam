@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6540945017659910664
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1310521195390838252, guid: 116b04ad5172ace4081f2711665ce2a9,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 4084112206582859008, guid: 52de30559e1984e47bb544c5da2a1591,
+        type: 3}
+    - target: {fileID: 2130429613096123209, guid: 116b04ad5172ace4081f2711665ce2a9,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 6054f615993e06d4d9f50d27e8a136ee,
+        type: 2}
+    - target: {fileID: 4160525126651807291, guid: 116b04ad5172ace4081f2711665ce2a9,
+        type: 3}
+      propertyPath: m_Name
+      value: Flying Bomber
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906252354458539922, guid: 116b04ad5172ace4081f2711665ce2a9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906252354458539922, guid: 116b04ad5172ace4081f2711665ce2a9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906252354458539922, guid: 116b04ad5172ace4081f2711665ce2a9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526656517740442697, guid: 116b04ad5172ace4081f2711665ce2a9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526656517740442697, guid: 116b04ad5172ace4081f2711665ce2a9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526656517740442697, guid: 116b04ad5172ace4081f2711665ce2a9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526656517740442697, guid: 116b04ad5172ace4081f2711665ce2a9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526656517740442697, guid: 116b04ad5172ace4081f2711665ce2a9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526656517740442697, guid: 116b04ad5172ace4081f2711665ce2a9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526656517740442697, guid: 116b04ad5172ace4081f2711665ce2a9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526656517740442697, guid: 116b04ad5172ace4081f2711665ce2a9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526656517740442697, guid: 116b04ad5172ace4081f2711665ce2a9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526656517740442697, guid: 116b04ad5172ace4081f2711665ce2a9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526656517740442697, guid: 116b04ad5172ace4081f2711665ce2a9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7663090475598723736, guid: 116b04ad5172ace4081f2711665ce2a9,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6378699289685357790, guid: 05e7e0e679fec2145b1c59df8f75491e,
+        type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 116b04ad5172ace4081f2711665ce2a9, type: 3}

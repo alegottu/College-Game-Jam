@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 3
   _fallForce: 2
-  _jumpForce: 10
-  _maxVelocity: 0
+  _jumpForce: 8
+  _maxVelocity: 1
   _coyoteTime: 0.1

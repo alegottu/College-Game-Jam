@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneController : Singleton<SceneController>
 {
     [HideInInspector] public string previousLevel = string.Empty;
-
-    [SerializeField] private string currentLevel = string.Empty;
+    public string currentLevel = string.Empty;
     [SerializeField] private GameStateManager gameState = null;
 
     private List<AsyncOperation> loadOperations = new List<AsyncOperation>();
@@ -22,13 +21,6 @@ public class SceneController : Singleton<SceneController>
         previousLevel = currentLevel;
         currentLevel = lvl;
         StartCoroutine(LevelProgress(lvl));
-    }
-
-    public void Reload()
-    {
-        currentLevel = previousLevel;
-        previousLevel = currentLevel;
-        StartCoroutine(LevelProgress(currentLevel));
     }
 
     public IEnumerator LevelProgress(string lvl)

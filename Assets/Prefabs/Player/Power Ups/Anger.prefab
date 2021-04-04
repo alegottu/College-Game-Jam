@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa0ef216ed0efed46adea2316944d2c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  message: Press [{}] to dash.
+  abilityContained: Dash
   order: 1
   graphicPrefab: {fileID: 1648066243297639366, guid: 18dfce1755cbb56449b362be7c52320d,
     type: 3}

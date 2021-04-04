@@ -183,6 +183,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 3133264211748199872}
+    - target: {fileID: 4620036031599073362, guid: 26a6c0a2c142fd14c9a02645378ad874,
+        type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4860056465418659622, guid: 26a6c0a2c142fd14c9a02645378ad874,
         type: 3}
       propertyPath: m_Name
@@ -238,6 +243,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Offset.y
       value: -0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250374308526636580, guid: 26a6c0a2c142fd14c9a02645378ad874,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.4282179
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250374308526636580, guid: 26a6c0a2c142fd14c9a02645378ad874,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.3906584
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250374308526636580, guid: 26a6c0a2c142fd14c9a02645378ad874,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.005327165
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250374308526636580, guid: 26a6c0a2c142fd14c9a02645378ad874,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.0035513341
       objectReference: {fileID: 0}
     - target: {fileID: 8417757117421780057, guid: 26a6c0a2c142fd14c9a02645378ad874,
         type: 3}
