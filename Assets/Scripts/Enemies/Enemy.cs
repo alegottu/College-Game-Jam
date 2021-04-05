@@ -5,7 +5,7 @@ public abstract class Enemy : MonoBehaviour
 {
     public event Action OnAttack;
     public event Action<float> OnMove;
-    public Health player = null;
+    public Health player = null; // change to fulfill through an event
 
     [SerializeField] protected EnemyStats stats = null;
     [SerializeField] protected SpriteRenderer sprite = null;

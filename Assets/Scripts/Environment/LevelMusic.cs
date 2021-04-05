@@ -18,6 +18,7 @@ public class LevelMusic : MonoBehaviour
     {
         AudioController.Instance.ChangeTrack(intro);
         AudioController.Instance.SetLoop(false);
+        AudioController.Instance.Play();
     }
 
     private void Update()

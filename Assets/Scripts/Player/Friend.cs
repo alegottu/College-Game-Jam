@@ -15,7 +15,7 @@ public class Friend : Player
 
     private void OnDeathEventHandler()
     {
-        gameObject.SetActive(false);
+        health.Heal(health.maxHealth);
     }
 
     private void OnAnyCheckPointReachedEventHandler(CheckPoint obj)
