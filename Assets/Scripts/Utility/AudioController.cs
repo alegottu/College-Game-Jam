@@ -3,10 +3,24 @@
 public class AudioController : Singleton<AudioController>
 {
     [SerializeField] private AudioSource source = null;
-    [SerializeField] private AudioClip music = null;
 
     private LevelMusic levelMusic = null;
     private float sfxVolume = 1;
+
+    private void OnEnable()
+    {
+        LevelMusic.OnAnyMusicEnter += OnAnyMusicEnterEventHandler;
+    }
+
+    private void OnAnyMusicEnterEventHandler(LevelMusic music)
+    {
+        levelMusic = music;
+    }
+
+    public void ToggleLevelMusic()
+    {
+        levelMusic.enabled = !levelMusic.enabled;
+    }
 
     public void ChangeMusicVolume(float volume)
     {
@@ -22,6 +36,11 @@ public class AudioController : Singleton<AudioController>
     public void ChangeTrack(AudioClip track)
     {
         source.clip = track;
+    }
+
+    public void Play()
+    {
+        source.PlayOneShot(source.clip);
     }
 
     public bool IsPlaying()

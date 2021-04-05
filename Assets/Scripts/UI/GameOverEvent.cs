@@ -22,6 +22,7 @@ public class GameOverEvent : MonoBehaviour
 
     private void OnPlayerDeathEventHandler()
     {
+        AudioController.Instance.ToggleLevelMusic();
         screen.SetActive(true);
     }
 

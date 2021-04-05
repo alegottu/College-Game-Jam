@@ -1,10 +1,18 @@
 using UnityEngine;
+using System;
 
 public class LevelMusic : MonoBehaviour
 {
+    public static event Action<LevelMusic> OnAnyMusicEnter;
+
     // Assign the intro to the audio source in the inspector
     [SerializeField] private AudioClip loop = null;
     [SerializeField] private AudioClip intro = null;
+
+    private void Awake()
+    {
+        OnAnyMusicEnter?.Invoke(this);
+    }
 
     private void OnEnable()
     {
@@ -18,6 +26,7 @@ public class LevelMusic : MonoBehaviour
         {
             AudioController.Instance.ChangeTrack(loop);
             AudioController.Instance.SetLoop(true);
+            AudioController.Instance.Play();
         }
     }
 }
