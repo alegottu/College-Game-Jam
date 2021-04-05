@@ -43,7 +43,9 @@ public class Guardian : Player
             emotionItem = null;
         }
 
-        Reset();
+        itemUsed = false;
+        lightsUsed = 0;
+        currentLights = new List<GameObject>();
     }
 
     public void Reset()
