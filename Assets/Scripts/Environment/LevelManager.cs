@@ -35,12 +35,12 @@ public class LevelManager : MonoBehaviour
 
     private void OnAnyCheckPointReachedEventHandler(CheckPoint point)
     {
-        current = point;
-
         if (point.Equals(current))
         {
             atStart = false;
         }
+
+        current = point;
     }
 
     private void OnNewCameraActiveEventHandler(CameraController cam)
