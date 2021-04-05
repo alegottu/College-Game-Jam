@@ -37,7 +37,7 @@ public class SceneController : Singleton<SceneController>
 
         while (!ao.isDone)
         {
-            Debug.Log(Mathf.Clamp(ao.progress / 0.9f, 0, 1));
+            Debug.Log("Loading in progress: " + Mathf.Clamp(ao.progress / 0.9f, 0, 1) * 100 + "%");
             yield return null;
         }
     }

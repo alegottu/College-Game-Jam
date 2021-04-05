@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92b9c25c5a03e244b0652eb19d1d3ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Hold [{}] in order to grab the wall. You can jump again while you are
-    grabbing.
+  message: Push against a wall and hold [{}] in order to grab it. You can jump again
+    while you are grabbing.
   abilityContained: Grab
   order: 0
   graphicPrefab: {fileID: 668335262533175351, guid: da88f2241b0180e41ba6e9ae1188bf23,
     type: 3}
-  wallJumpForce: 6
+  wallJumpForce: {x: 7.5, y: 6}
+  wallJumpTime: 0.1
   grabbable:
     serializedVersion: 2
     m_Bits: 8
