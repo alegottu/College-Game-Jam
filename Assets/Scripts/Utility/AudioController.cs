@@ -40,6 +40,7 @@ public class AudioController : Singleton<AudioController>
 
     public void Play()
     {
+        source.Stop();
         source.PlayOneShot(source.clip);
     }
 

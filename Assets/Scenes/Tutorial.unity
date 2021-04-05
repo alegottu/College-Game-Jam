@@ -3065,16 +3065,16 @@ PrefabInstance:
       propertyPath: loop
       value: 
       objectReference: {fileID: 8300000, guid: e10cbc5ee1a545e499fffa5c6fac6e9c, type: 3}
+    - target: {fileID: 5993981132062635604, guid: 4c06f2cfc91d0fc49b1c093ee1a26a91,
+        type: 3}
+      propertyPath: intro
+      value: 
+      objectReference: {fileID: 8300000, guid: e10cbc5ee1a545e499fffa5c6fac6e9c, type: 3}
     - target: {fileID: 8382323508003775757, guid: 4c06f2cfc91d0fc49b1c093ee1a26a91,
         type: 3}
       propertyPath: m_Name
       value: Level Music
       objectReference: {fileID: 0}
-    - target: {fileID: 9144212676096677607, guid: 4c06f2cfc91d0fc49b1c093ee1a26a91,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: e10cbc5ee1a545e499fffa5c6fac6e9c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c06f2cfc91d0fc49b1c093ee1a26a91, type: 3}
 --- !u!1001 &1152597436
