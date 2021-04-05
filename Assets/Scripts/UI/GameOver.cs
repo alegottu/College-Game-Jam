@@ -11,8 +11,10 @@ public class GameOver : MonoBehaviour
         AudioController.Instance.ChangeTrack(music);
     }
 
+    // Make sure to fulfill remaining events in the inspector
     public void Retry()
     {
+        AudioController.Instance.ToggleLevelMusic();
         levelManager.Reset();
     }
 
