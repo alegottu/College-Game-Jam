@@ -6,4 +6,9 @@ public class Quit : MonoBehaviour, IMenuButton
     {
         SceneController.Instance.Quit();
     }
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }

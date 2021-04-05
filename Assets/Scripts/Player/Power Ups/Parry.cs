@@ -28,6 +28,7 @@ public class Parry : PowerUp<Rigidbody2D>
         if (!parried && parryHit && input.primary)
         {
             parried = true;
+            AnimateUse();
         }
 
         if (parried && parryTimer <= duration)
@@ -45,6 +46,7 @@ public class Parry : PowerUp<Rigidbody2D>
 
         if (parryTimer > duration)
         {
+            AnimateRestore();
             parried = false;
             parryTimer = 0;
         }

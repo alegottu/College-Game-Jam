@@ -4,15 +4,19 @@ public class WallGrab : PowerUp<Rigidbody2D>
 {
     private PlayerInput input = null;
     private Animator playerAnim = null;
-    private float wallJumpForce = 0;
+    private Vector2 jumpForce = Vector2.zero;
+    private float jumpTime = 0;
     private LayerMask grabbable;
 
     private RaycastHit2D wallHit = new RaycastHit2D();
     private bool grabbing = false;
+    private bool jumping = false;
+    private float jumpTimer = 0;
 
-    public void SetStats(float wallJumpForce, LayerMask grabbable)
+    public void SetStats(Vector2 jumpForce, float jumpTime, LayerMask grabbable)
     {
-        this.wallJumpForce = wallJumpForce;
+        this.jumpForce = jumpForce;
+        this.jumpTime = jumpTime;
         this.grabbable = grabbable;
 
         affected = gameObject.GetComponent<Rigidbody2D>();
@@ -22,16 +26,17 @@ public class WallGrab : PowerUp<Rigidbody2D>
 
     private void FixedUpdate()
     {
-        wallHit = Physics2D.BoxCast(new Vector2(transform.position.x + playerSize.x / 2, transform.position.y), playerSize, 0f, new Vector2(input.movement, 0).normalized, playerSize.x, grabbable);
+        wallHit = Physics2D.BoxCast(new Vector2(transform.position.x + playerSize.x / 2 * Mathf.Round(input.movement), transform.position.y), new Vector2(0.01f, playerSize.y / 2), 0f, (Vector2.right * input.movement).normalized, 0, grabbable);
 
         if (input.grab && wallHit)
         {
             grabbing = true;
             affected.velocity = new Vector2(affected.velocity.x, 0);
 
-            if (input.jump && input.movement + wallHit.normal.x != 0)
+            if (input.jump && jumpTimer < jumpTime)
             {
-                affected.velocity = new Vector2(affected.velocity.x, wallJumpForce);
+                jumping = true;
+                affected.velocity = new Vector2(-input.movement * jumpForce.x, jumpForce.y);
             }
         }
         else
@@ -54,6 +59,17 @@ public class WallGrab : PowerUp<Rigidbody2D>
         else
         {
             AnimateRestore();
+        }
+
+        if (jumping)
+        {
+            jumpTimer += Time.deltaTime;
+        }
+
+        if (input.jumpExit)
+        {
+            jumpTimer = 0;
+            jumping = false;
         }
     }
 }
