@@ -651,11 +651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   previousLevel: 
-<<<<<<< HEAD
-  currentLevel: Test
-=======
   currentLevel: StageThree
->>>>>>> b102a6ca983b6ec51a183b3101ad4e0593172e69
   gameState: {fileID: 1108323555}
 --- !u!4 &1726061821
 Transform:
@@ -1065,6 +1061,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 456973027}
     m_Modifications:
+    - target: {fileID: 2824714458713078200, guid: 0fbbc4040f40ccc44b109bcdcaa0ac62,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824714458729466781, guid: 0fbbc4040f40ccc44b109bcdcaa0ac62,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824714458729466781, guid: 0fbbc4040f40ccc44b109bcdcaa0ac62,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2824714458744463566, guid: 0fbbc4040f40ccc44b109bcdcaa0ac62,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1178,6 +1189,51 @@ PrefabInstance:
     - target: {fileID: 2824714458744463567, guid: 0fbbc4040f40ccc44b109bcdcaa0ac62,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824714458824467077, guid: 0fbbc4040f40ccc44b109bcdcaa0ac62,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824714458824467077, guid: 0fbbc4040f40ccc44b109bcdcaa0ac62,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824714458824467077, guid: 0fbbc4040f40ccc44b109bcdcaa0ac62,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824714459712132673, guid: 0fbbc4040f40ccc44b109bcdcaa0ac62,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824714459712132673, guid: 0fbbc4040f40ccc44b109bcdcaa0ac62,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824714460329467352, guid: 0fbbc4040f40ccc44b109bcdcaa0ac62,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824714460497662098, guid: 0fbbc4040f40ccc44b109bcdcaa0ac62,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824714460497662098, guid: 0fbbc4040f40ccc44b109bcdcaa0ac62,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824714460497662098, guid: 0fbbc4040f40ccc44b109bcdcaa0ac62,
+        type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4896497685260812250, guid: 0fbbc4040f40ccc44b109bcdcaa0ac62,
