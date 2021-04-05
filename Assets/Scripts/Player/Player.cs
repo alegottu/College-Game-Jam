@@ -26,12 +26,7 @@ public abstract class Player : MonoBehaviour
     protected virtual void Awake()
     {
         playerSize = gameObject.GetComponentInChildren<SpriteRenderer>().bounds.size;
-    }
-
-    protected virtual void OnEnable()
-    {
         OnPlayerEnter?.Invoke(this);
-        AudioController.Instance.ChangeSFXTrack(sfx);
     }
 
     protected virtual void Update()
@@ -78,7 +73,7 @@ public abstract class Player : MonoBehaviour
 
     protected void CheckGround()
     {
-        groundHit = Physics2D.BoxCast(transform.position - new Vector3(0, playerSize.y / 2), new Vector2(playerSize.x / 2, 0.5f), 0f, Vector2.down, 0.5f, ground);
+        groundHit = Physics2D.BoxCast(transform.position - new Vector3(0, playerSize.y / 2), new Vector2(playerSize.x / 2, 0.1f), 0f, Vector2.down, 0.1f, ground);
 
         if (groundHit)
         {

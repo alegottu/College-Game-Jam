@@ -3,10 +3,11 @@ using System;
 
 public abstract class Item : MonoBehaviour
 {
-    public static event Action<string, KeyCode> OnAnyItemPickUp; // Sends message for UI to display
+    public static event Action<Item> OnAnyItemPickUp; // Sends message for UI to display
 
-    [SerializeField] protected string message = string.Empty;
-    [SerializeField] protected string abilityContained = string.Empty; // Ensure this matches up with the binding key in the Input Manager
+    public string message = string.Empty;
+    public string containedAbility = string.Empty; // Ensure this matches up with the binding key in the Input Manager
+
     [SerializeField] protected int order = 0;
     [SerializeField] protected GameObject graphicPrefab = null;
 
@@ -27,7 +28,7 @@ public abstract class Item : MonoBehaviour
             this.player = player;
             graphic.transform.parent = player.transform;
             OnPickUp();
-            OnAnyItemPickUp?.Invoke(message, InputManager.Instance.ReadBinding(abilityContained));
+            OnAnyItemPickUp?.Invoke(this);
             Destroy(gameObject);
         }
     }

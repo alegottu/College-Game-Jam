@@ -1,6 +1,7 @@
 using UnityEngine;
+using System;
 
-public class Door : SceneTransition
+public class Door : MonoBehaviour
 {
     [SerializeField] private string nextStage = string.Empty;
 

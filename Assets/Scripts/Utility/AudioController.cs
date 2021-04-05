@@ -2,38 +2,35 @@
 
 public class AudioController : Singleton<AudioController>
 {
-    [SerializeField] private AudioSource music = null;
-    [SerializeField] private AudioSource sfx = null;
+    [SerializeField] private AudioSource source = null;
+    [SerializeField] private AudioClip music = null;
 
-    private float musicVolume = 1;
+    private LevelMusic levelMusic = null;
     private float sfxVolume = 1;
-
-    public void ChangeMasterVolume(float volume)
-    {
-        AudioListener.volume = volume;
-    }
 
     public void ChangeMusicVolume(float volume)
     {
-        music.volume = volume;
-        musicVolume = volume;
+        source.volume = volume;
     }
 
+    // Use to set any sfx audio source that enters
     public void ChangeSFXVolume(float volume)
     {
-        sfx.volume = volume;
         sfxVolume = volume;
     }
 
-    public void ChangeMusicTrack(AudioSource track)
+    public void ChangeTrack(AudioClip track)
     {
-        music = track;
-        music.volume = musicVolume;
+        source.clip = track;
     }
 
-    public void ChangeSFXTrack(AudioSource track)
+    public bool IsPlaying()
     {
-        sfx = track;
-        sfx.volume = sfxVolume;
+        return source.isPlaying;
+    }
+
+    public void SetLoop(bool loop)
+    {
+        source.loop = loop;
     }
 }

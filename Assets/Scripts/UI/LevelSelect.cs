@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class LevelSelect : SceneTransition
+public class LevelSelect : MonoBehaviour
 {
     private static Dictionary<int, string> levels = new Dictionary<int, string>
     {
