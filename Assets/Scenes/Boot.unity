@@ -651,7 +651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   previousLevel: 
-  currentLevel: StageThree
+  currentLevel: StageOne
   gameState: {fileID: 1108323555}
 --- !u!4 &1726061821
 Transform:
@@ -1189,7 +1189,7 @@ PrefabInstance:
     - target: {fileID: 2824714458744463567, guid: 0fbbc4040f40ccc44b109bcdcaa0ac62,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2824714458824467077, guid: 0fbbc4040f40ccc44b109bcdcaa0ac62,
         type: 3}
