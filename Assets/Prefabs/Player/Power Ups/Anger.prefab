@@ -17,7 +17,7 @@ MonoBehaviour:
   order: 1
   graphicPrefab: {fileID: 1648066243297639366, guid: 18dfce1755cbb56449b362be7c52320d,
     type: 3}
-  dashSpeed: 10
+  dashSpeed: 4
   dashDuration: 0.25
   cooldown: 1
 --- !u!1001 &7094084752602711605
