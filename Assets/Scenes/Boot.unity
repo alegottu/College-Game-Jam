@@ -844,7 +844,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   previousLevel: 
+<<<<<<< HEAD
   currentLevel: Menu
+=======
+  currentLevel: StageOne
+>>>>>>> f2d763a98f31777f9fbd72fa6d47adb1e3974efd
   gameState: {fileID: 1108323555}
 --- !u!4 &1726061821
 Transform:
