@@ -20,7 +20,7 @@ MonoBehaviour:
   sfx: {fileID: 2520197625789222589}
   ground:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
   light2d: {fileID: 765398006312450456}
   emotionItem: {fileID: 0}
   lightPrefab: {fileID: 946731397973097589, guid: cadb57eabaf0fb64299eba1ef54d183b,

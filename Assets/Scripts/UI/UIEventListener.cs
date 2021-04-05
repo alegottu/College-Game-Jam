@@ -9,17 +9,17 @@ public class UIEventListener : MonoBehaviour
 
     private void OnEnable()
     {
-        Item.OnAnyItemPickUp += OnAnyItemPickupEventHandelr;
+        Item.OnAnyItemPickUp += OnAnyItemPickupEventHandler;
     }
 
-    private void OnAnyItemPickupEventHandelr(string message, KeyCode binding)
+    private void OnAnyItemPickupEventHandler(Item item)
     {
-        tooltipText.text = message.Replace("{}", binding.ToString()) + tooltipEnd;
+        tooltipText.text = item.message.Replace("{}", InputManager.Instance.ReadBinding(item.containedAbility).ToString()) + tooltipEnd;
         tooltip.SetActive(true);
     }
 
     private void OnDisable()
     {
-        Item.OnAnyItemPickUp += OnAnyItemPickupEventHandelr;
+        Item.OnAnyItemPickUp += OnAnyItemPickupEventHandler;
     }
 }

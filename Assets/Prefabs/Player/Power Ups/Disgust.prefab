@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: Press [{}] just before you land on an enemy to parry.
-  abilityContained: Primary
+  containedAbility: Primary
   order: 2
   graphicPrefab: {fileID: 4743910458284670288, guid: 0904757169d98ef45a07aa4e81ce9f26,
     type: 3}

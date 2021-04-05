@@ -8,12 +8,32 @@ public class SceneController : Singleton<SceneController>
     [HideInInspector] public string previousLevel = string.Empty;
     public string currentLevel = string.Empty;
     [SerializeField] private GameStateManager gameState = null;
+    private bool transitionActive = false;
 
     private List<AsyncOperation> loadOperations = new List<AsyncOperation>();
+
+    private void OnEnable()
+    {
+        GameStateManager.OnGameStateChange += OnGameStateChangeEventHandler;
+    }
+
+    private void OnGameStateChangeEventHandler(GameStateManager.GameState previous, GameStateManager.GameState current)
+    {
+        if (transitionActive && previous == GameStateManager.GameState.RUNNING && current == GameStateManager.GameState.RUNNING)
+        {
+            UnloadLevel();
+        }
+    }
+
+    public void ToggleTransitionActive()
+    {
+        transitionActive = !transitionActive;
+    }
 
     private void Start()
     {
         LoadLevel(currentLevel);
+        ToggleTransitionActive();
     }
 
     public void LoadLevel(string lvl)
@@ -61,25 +81,19 @@ public class SceneController : Singleton<SceneController>
     public void UnloadLevel(string lvl)
     {
         AsyncOperation ao = SceneManager.UnloadSceneAsync(lvl);
-        ao.completed += OnUnloadComplete;
 
         if (ao == null)
         {
             Debug.LogError("Unable to unload " + lvl);
             return;
         }
+
+        ao.completed += OnUnloadComplete;
     }
 
     public void UnloadLevel()
     {
-        AsyncOperation ao = SceneManager.UnloadSceneAsync(previousLevel);
-        ao.completed += OnUnloadComplete;
-
-        if (ao == null)
-        {
-            Debug.LogError("Unable to unload " + previousLevel);
-            return;
-        }
+        UnloadLevel(previousLevel);
     }
 
     private void OnUnloadComplete(AsyncOperation ao)
@@ -104,5 +118,10 @@ public class SceneController : Singleton<SceneController>
         LoadLevel("Menu");
         gameState.UpdateState(GameStateManager.GameState.PREGAME);
         UnloadLevel();
+    }
+
+    private void OnDisable()
+    {
+        GameStateManager.OnGameStateChange -= OnGameStateChangeEventHandler;
     }
 }

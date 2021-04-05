@@ -1,17 +1,19 @@
 using UnityEngine;
 
-public class GameOver : SceneTransition
+// Meant for use in OnClick events
+public class GameOver : MonoBehaviour
 {
-    [SerializeField] private AudioSource music = null;
+    [SerializeField] private LevelManager levelManager = null;
+    [SerializeField] private AudioClip music = null;
 
     private void Awake()
     {
-        AudioController.Instance.ChangeMusicTrack(music);
+        AudioController.Instance.ChangeTrack(music);
     }
 
     public void Retry()
     {
-        SceneController.Instance.LoadLevel(SceneController.Instance.previousLevel);
+        levelManager.Reset();
     }
 
     public void Quit()

@@ -4,19 +4,20 @@ public class LevelMusic : MonoBehaviour
 {
     // Assign the intro to the audio source in the inspector
     [SerializeField] private AudioClip loop = null;
-    [SerializeField] private AudioSource music = null;
+    [SerializeField] private AudioClip intro = null;
 
-    private void Awake()
+    private void OnEnable()
     {
-        AudioController.Instance.ChangeMusicTrack(music);
+        AudioController.Instance.ChangeTrack(intro);
+        AudioController.Instance.SetLoop(false);
     }
 
     private void Update()
     {
-        if (!music.isPlaying)
+        if (!AudioController.Instance.IsPlaying())
         {
-            music.PlayOneShot(loop);
-            music.loop = true;
+            AudioController.Instance.ChangeTrack(loop);
+            AudioController.Instance.SetLoop(true);
         }
     }
 }

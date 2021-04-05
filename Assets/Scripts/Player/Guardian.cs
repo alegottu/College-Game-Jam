@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
+using System.Collections.Generic;
 
 public class Guardian : Player
 {
@@ -9,11 +10,12 @@ public class Guardian : Player
     [SerializeField] private GameObject lightPrefab = null;
     [SerializeField] private int lightAmount = 3;
 
+    private bool itemUsed = false;
     private int lightsUsed = 0;
+    private List<GameObject> currentLights = new List<GameObject>(); // Keeps track of the lights used since the last checkpoint reached
 
-    protected override void OnEnable()
+    private void OnEnable()
     {
-        base.OnEnable();
         CheckPoint.OnAnyCheckPointReached += OnAnyCheckPointReachedEventHandler;
     }
 
@@ -27,16 +29,35 @@ public class Guardian : Player
             GameObject newLight = Instantiate(lightPrefab, transform.position, Quaternion.identity);
         }
 
-        if (emotionItem != null && input.secondary)
+        if (!itemUsed && emotionItem && input.secondary)
         {
+            itemUsed = true;
             GameObject emotion = Instantiate(emotionItem, transform.position, Quaternion.identity);
-            emotionItem = null;
         }
     }
 
     private void OnAnyCheckPointReachedEventHandler(CheckPoint _)
     {
+        if (itemUsed)
+        {
+            emotionItem = null;
+        }
+
+        Reset();
+    }
+
+    public void Reset()
+    {
+        itemUsed = false;
         lightsUsed = 0;
+
+        foreach (GameObject light in currentLights)
+        {
+            Destroy(light);
+        }
+        currentLights = new List<GameObject>();
+
+        light2d.enabled = true;
     }
 
     protected override void OnDisable()

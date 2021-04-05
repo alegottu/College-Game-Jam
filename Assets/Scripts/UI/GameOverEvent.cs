@@ -1,12 +1,14 @@
 using UnityEngine;
 
-public class GameOverEvent : SceneTransition
+public class GameOverEvent : MonoBehaviour
 {
+    [SerializeField] private GameObject screen = null;
+    [SerializeField] private AudioClip music = null;
+
     private Health player = null;
 
-    protected override void OnEnable()
+    private void OnEnable()
     {
-        base.OnEnable();
         Player.OnPlayerEnter += OnPlayerEnterEventHandler;
     }
 
@@ -20,12 +22,11 @@ public class GameOverEvent : SceneTransition
 
     private void OnPlayerDeathEventHandler()
     {
-        SceneController.Instance.LoadLevel("GameOver");
+        screen.SetActive(true);
     }
 
-    protected override void OnDisable()
+    private void OnDisable()
     {
-        base.OnDisable();
         Player.OnPlayerEnter -= OnPlayerEnterEventHandler;
 
         if (player)
