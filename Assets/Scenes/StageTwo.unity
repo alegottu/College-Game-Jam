@@ -4648,15 +4648,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 244
-=======
-  m_RootOrder: 240
->>>>>>> e4b16693b61b3f5aebc0a40308489a717956adcb
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &455790591
-PrefabInstance:
-  m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
@@ -10747,15 +10739,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 245
-=======
-  m_RootOrder: 241
->>>>>>> e4b16693b61b3f5aebc0a40308489a717956adcb
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1201784589
-PrefabInstance:
-  m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
